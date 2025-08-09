@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-# Conexão MySQL via PyMySQL
 SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:@localhost/restaurantes_db"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)

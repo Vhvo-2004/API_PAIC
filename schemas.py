@@ -1,12 +1,11 @@
 from pydantic import BaseModel
 from typing import Optional, List
 from datetime import datetime
+from decimal import Decimal
 
+# ---- Restaurante ----
 class RestauranteBase(BaseModel):
     nome: str
-    endereco: Optional[str]
-    categoria: Optional[str]
-    url_platform: Optional[str]
 
 class RestauranteCreate(RestauranteBase):
     pass
@@ -17,45 +16,74 @@ class Restaurante(RestauranteBase):
         orm_mode = True
 
 
-class AvaliacaoBase(BaseModel):
-    restaurante_id: int
-    usuario: Optional[str]
-    comentario: str
-    nota: Optional[int]
-    data: Optional[datetime]
-
-class AvaliacaoCreate(AvaliacaoBase):
-    pass
-
-class Avaliacao(AvaliacaoBase):
-    id: int
-    class Config:
-        orm_mode = True
-
-
-class AspectoBase(BaseModel):
+# ---- Cliente ----
+class ClienteBase(BaseModel):
     nome: str
+    email: Optional[str] = None
+    login: Optional[str] = None
+    genero: Optional[str] = None
 
-class AspectoCreate(AspectoBase):
+class ClienteCreate(ClienteBase):
     pass
 
-class Aspecto(AspectoBase):
+class Cliente(ClienteBase):
     id: int
     class Config:
         orm_mode = True
 
 
-class AvaliacaoAspectoBase(BaseModel):
-    avaliacao_id: int
-    aspecto_id: int
-    sentimento: Optional[str]
-    polaridade: Optional[float]
-    nota_predita: Optional[int]
+# ---- Comentario ----
+class ComentarioBase(BaseModel):
+    data_publicacao: Optional[datetime] = None
+    curtidas: Optional[int] = None
+    texto: str
+    titulo: Optional[str] = None
+    url: Optional[str] = None
+    restaurante_id: int
+    cliente_id: int
 
-class AvaliacaoAspectoCreate(AvaliacaoAspectoBase):
+class ComentarioCreate(ComentarioBase):
     pass
 
-class AvaliacaoAspecto(AvaliacaoAspectoBase):
+class Comentario(ComentarioBase):
     id: int
     class Config:
         orm_mode = True
+
+
+# ---- Categoria de Opinião ----
+class CategoriaOpiniaoBase(BaseModel):
+    categoria: str
+
+class CategoriaOpiniaoCreate(CategoriaOpiniaoBase):
+    pass
+
+class CategoriaOpiniao(CategoriaOpiniaoBase):
+    id: int
+    class Config:
+        orm_mode = True
+
+
+# ---- Opinião ----
+class OpiniaoBase(BaseModel):
+    aspecto: str
+    sentimento: Optional[str] = None
+    polaridade: Optional[float] = None
+    sentenca: Optional[str] = None
+    comentario_id: int
+    categoria_id: Optional[int] = None
+
+class OpiniaoCreate(OpiniaoBase):
+    pass
+
+class Opiniao(OpiniaoBase):
+    id: int
+    class Config:
+        orm_mode = True
+
+
+# ---- Comparação (mantido para compatibilidade com sua UI) ----
+class AspectoComparado(BaseModel):
+    aspecto: str
+    notaPredita1: Decimal  # aqui usaremos média de 'polaridade' do restaurante 1
+    notaPredita2: Decimal  # média de 'polaridade' do restaurante 2

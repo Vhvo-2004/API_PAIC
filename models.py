@@ -6,42 +6,56 @@ class Restaurante(Base):
     __tablename__ = "restaurante"
     id = Column(Integer, primary_key=True, index=True)
     nome = Column(String(100), nullable=False)
-    endereco = Column(String(200))
-    categoria = Column(String(50))
-    url_platform = Column(String(200))
 
-    avaliacoes = relationship("Avaliacao", back_populates="restaurante")
+    comentarios = relationship("Comentario", back_populates="restaurante", cascade="all, delete-orphan")
 
 
-class Avaliacao(Base):
-    __tablename__ = "avaliacao"
+class Cliente(Base):
+    __tablename__ = "cliente"
     id = Column(Integer, primary_key=True, index=True)
+    nome = Column(String(100), nullable=False)
+    email = Column(String(150))
+    login = Column(String(60))
+    genero = Column(String(20))
+
+    comentarios = relationship("Comentario", back_populates="cliente", cascade="all, delete-orphan")
+
+
+class Comentario(Base):
+    __tablename__ = "comentario"
+    id = Column(Integer, primary_key=True, index=True)
+    data_publicacao = Column(DateTime)
+    curtidas = Column(Integer)
+    texto = Column(Text, nullable=False)
+    titulo = Column(String(200))
+    url = Column(String(300))
+
     restaurante_id = Column(Integer, ForeignKey("restaurante.id"), nullable=False)
-    usuario = Column(String(100))
-    comentario = Column(Text, nullable=False)
-    nota = Column(Integer)
-    data = Column(DateTime)
+    cliente_id = Column(Integer, ForeignKey("cliente.id"), nullable=False)
 
-    restaurante = relationship("Restaurante", back_populates="avaliacoes")
-    aspectos = relationship("AvaliacaoAspecto", back_populates="avaliacao")
+    restaurante = relationship("Restaurante", back_populates="comentarios")
+    cliente = relationship("Cliente", back_populates="comentarios")
+    opinioes = relationship("Opiniao", back_populates="comentario", cascade="all, delete-orphan")
 
 
-class Aspecto(Base):
-    __tablename__ = "aspecto"
+class CategoriaOpiniao(Base):
+    __tablename__ = "categoria_opiniao"
     id = Column(Integer, primary_key=True, index=True)
-    nome = Column(String(50), unique=True, nullable=False)
+    categoria = Column(String(100), nullable=False)
 
-    avaliacao_aspecto = relationship("AvaliacaoAspecto", back_populates="aspecto")
+    opinioes = relationship("Opiniao", back_populates="categoria")
 
 
-class AvaliacaoAspecto(Base):
-    __tablename__ = "avaliacao_aspecto"
+class Opiniao(Base):
+    __tablename__ = "opiniao"
     id = Column(Integer, primary_key=True, index=True)
-    avaliacao_id = Column(Integer, ForeignKey("avaliacao.id"), nullable=False)
-    aspecto_id = Column(Integer, ForeignKey("aspecto.id"), nullable=False)
-    sentimento = Column(String(10))
-    polaridade = Column(Float)
-    nota_predita = Column(Integer)
+    aspecto = Column(String(100), nullable=False)     # ex.: "comida", "atendimento", etc.
+    sentimento = Column(String(50))                   # ex.: "positivo", "negativo", "neutro"
+    polaridade = Column(Float)                        # ex.: -1.0 a 1.0 ou 0..1
+    sentenca = Column(Text)                           # trecho de texto/justificativa
 
-    avaliacao = relationship("Avaliacao", back_populates="aspectos")
-    aspecto = relationship("Aspecto", back_populates="avaliacao_aspecto")
+    comentario_id = Column(Integer, ForeignKey("comentario.id"), nullable=False)
+    categoria_id = Column(Integer, ForeignKey("categoria_opiniao.id"), nullable=True)
+
+    comentario = relationship("Comentario", back_populates="opinioes")
+    categoria = relationship("CategoriaOpiniao", back_populates="opinioes")

@@ -1,70 +1,141 @@
+# populate_mock.py
 from sqlalchemy.orm import Session
-from database import SessionLocal, engine
-import models
-from datetime import datetime
+from sqlalchemy import text
+from faker import Faker
+from datetime import timedelta
 import random
 
-# Cria todas as tabelas no banco (caso não existam)
-models.Base.metadata.create_all(bind=engine)
+import models  # nova estrutura (Restaurante, Cliente, Comentario, Opiniao, CategoriaOpiniao)
+from database import SessionLocal
 
-# Abre sessão com o banco
+fake = Faker("pt_BR")
+random.seed(42)
+Faker.seed(42)
+
 db: Session = SessionLocal()
 
-# 🔥 RESET: limpa todas as tabelas para garantir integridade
-print("🧹 Limpando todas as tabelas (Avaliacoes, AvaliacaoAspecto, Restaurante, Aspecto)...")
-db.query(models.AvaliacaoAspecto).delete()
-db.query(models.Avaliacao).delete()
-db.query(models.Restaurante).delete()
-db.query(models.Aspecto).delete()
-db.commit()
+# ---------- Helpers ----------
+def sentimento_por_polaridade(p):
+    if p is None:
+        return random.choice(["positivo", "neutro", "negativo"])
+    if p > 0.15:
+        return "positivo"
+    elif p < -0.15:
+        return "negativo"
+    return "neutro"
 
-# 1. Inserindo restaurantes mock
-restaurantes_mock = [
-    models.Restaurante(nome="Pizzaria Saborosa", endereco="Rua A, 123", categoria="Pizza", url_platform="https://pizzariasaborosa.com"),
-    models.Restaurante(nome="Sushi Place", endereco="Av B, 456", categoria="Sushi", url_platform="https://sushiplace.com"),
-    models.Restaurante(nome="Churrascaria Fogo Alto", endereco="Rua C, 789", categoria="Churrasco", url_platform="https://fogoalto.com"),
-]
+# ---------- Limpeza segura ----------
+def limpar_banco(db: Session, drop_tabelas_antigas: bool = True):
+    """
+    Limpa as tabelas da nova estrutura e, opcionalmente, remove as TABELAS ANTIGAS
+    (avaliacao, aspecto, avaliacao_aspecto) que causam o erro 1451.
+    """
+    db.execute(text("SET FOREIGN_KEY_CHECKS=0"))
 
-db.add_all(restaurantes_mock)
-db.commit()
+    # --- Dropa TABELAS ANTIGAS se existirem (do schema anterior) ---
+    if drop_tabelas_antigas:
+        db.execute(text("DROP TABLE IF EXISTS avaliacao_aspecto"))
+        db.execute(text("DROP TABLE IF EXISTS avaliacao"))
+        db.execute(text("DROP TABLE IF EXISTS aspecto"))
 
-# 🔄 Recarrega os restaurantes do banco para garantir IDs corretos
-restaurantes_mock = db.query(models.Restaurante).all()
+    # --- Limpa TABELAS NOVAS na ordem correta ---
+    # Opiniao -> Comentario -> Cliente/Restaurante -> CategoriaOpiniao
+    db.execute(text("DELETE FROM opiniao"))
+    db.execute(text("DELETE FROM comentario"))
+    db.execute(text("DELETE FROM cliente"))
+    db.execute(text("DELETE FROM restaurante"))
+    db.execute(text("DELETE FROM categoria_opiniao"))
 
-# 2. Inserindo aspectos mock
-aspectos_mock = ["atendimento", "preço", "qualidade", "tempo de entrega"]
-
-aspecto_objs = []
-for asp in aspectos_mock:
-    aspecto = models.Aspecto(nome=asp)
-    db.add(aspecto)
+    db.execute(text("SET FOREIGN_KEY_CHECKS=1"))
     db.commit()
-    aspecto_objs.append(aspecto)
 
-# 3. Inserindo avaliações mock para cada restaurante
-for rest in restaurantes_mock:
-    for i in range(20):  # 🔥 20 avaliações por restaurante
-        avaliacao = models.Avaliacao(
-            restaurante_id=rest.id,
-            usuario=f"Usuario{i}",
-            comentario=f"Comentário exemplo {i} para {rest.nome}",
-            nota=random.randint(1, 5),
-            data=datetime.now()
+# ---------- Populador ----------
+def popular_banco(
+    num_restaurantes: int = 5,
+    num_clientes: int = 20,
+    comentarios_por_rest_min: int = 8,
+    comentarios_por_rest_max: int = 14,
+    opinioes_por_coment_min: int = 1,
+    opinioes_por_coment_max: int = 4,
+    aspectos_base=None,
+    categorias_base=None,
+):
+    if aspectos_base is None:
+        aspectos_base = ["comida", "atendimento", "preço", "ambiente"]
+    if categorias_base is None:
+        categorias_base = ["Sabor", "Serviço", "Custo-Benefício", "Ambiente"]
+
+    limpar_banco(db, drop_tabelas_antigas=True)
+
+    # Categorias
+    cat_objs = []
+    for nome in categorias_base:
+        c = models.CategoriaOpiniao(categoria=nome)
+        db.add(c)
+        cat_objs.append(c)
+    db.commit()
+
+    # Clientes
+    clientes = []
+    for _ in range(num_clientes):
+        cli = models.Cliente(
+            nome=fake.name(),
+            email=fake.unique.email(),
+            login=fake.user_name(),
+            genero=random.choice(["masculino", "feminino", "outro"]),
         )
-        db.add(avaliacao)
-        db.commit()
+        db.add(cli)
+        clientes.append(cli)
+    db.commit()
 
-        # 4. Inserindo aspectos nas avaliações
-        for aspecto in aspecto_objs:
-            avaliacao_aspecto = models.AvaliacaoAspecto(
-                avaliacao_id=avaliacao.id,
-                aspecto_id=aspecto.id,
-                sentimento=random.choice(["positivo", "negativo", "neutro"]),
-                polaridade=round(random.uniform(-1, 1), 2),
-                nota_predita=random.randint(1, 5)
+    # Restaurantes
+    restaurantes = []
+    for _ in range(num_restaurantes):
+        r = models.Restaurante(
+            nome=fake.company(),
+        )
+        db.add(r)
+        restaurantes.append(r)
+    db.commit()
+
+    # Comentários + Opiniões (1:N)
+    for rest in restaurantes:
+        qtd_coment = random.randint(comentarios_por_rest_min, comentarios_por_rest_max)
+        for _ in range(qtd_coment):
+            cliente = random.choice(clientes)
+            dt = fake.date_time_this_year() - timedelta(days=random.randint(0, 120))
+
+            comentario = models.Comentario(
+                data_publicacao=dt,
+                curtidas=random.randint(0, 500),
+                texto=fake.paragraph(nb_sentences=random.randint(1, 3)),
+                titulo=fake.sentence(nb_words=6),
+                url=fake.url(),
+                restaurante_id=rest.id,
+                cliente_id=cliente.id,
             )
-            db.add(avaliacao_aspecto)
+            db.add(comentario)
+            db.commit()  # precisa do ID para FK
+
+            qtd_opinioes = random.randint(opinioes_por_coment_min, opinioes_por_coment_max)
+            aspectos_escolhidos = random.sample(
+                aspectos_base,
+                k=min(qtd_opinioes, len(aspectos_base))
+            )
+            for asp in aspectos_escolhidos:
+                pol = round(random.uniform(-1, 1), 2)
+                opiniao = models.Opiniao(
+                    aspecto=asp,
+                    sentimento=sentimento_por_polaridade(pol),
+                    polaridade=pol,
+                    sentenca=fake.sentence(nb_words=random.randint(6, 16)),
+                    comentario_id=comentario.id,
+                    categoria_id=random.choice(cat_objs).id if random.random() < 0.9 else None,
+                )
+                db.add(opiniao)
         db.commit()
 
-db.close()
-print("✅ Banco resetado COMPLETAMENTE e populado com dados mock para teste.")
+    print("✅ Banco populado com sucesso!")
+
+if __name__ == "__main__":
+    popular_banco()
