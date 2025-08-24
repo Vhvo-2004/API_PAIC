@@ -1,0 +1,547 @@
+IDOpiniao,aspecto,sentimento,polaridade,scorePolaridade,sentenca,trecho,supervisionado,IDCategoriaFK,IDComentarioFK
+250837,memórias,afetivas,positivo,0.8235294117647058,"Muitas lembranças e memórias afetivas.😍 @graca_cavalcanti_bezerra",memórias,0,8,511010
+250833,opções,melhores,positivo,0.9302396840528394,"Procurem outra pizzaria, tem outras opções muito melhores por perto.",opções,0,3,511044
+250834,lugar,certo,positivo,0.8950131233595799,"Este é o lugar certo.",lugar,0,7,511044
+250835,Ambiente,gostoso,positivo,0.9693135986606805,"Ambiente gostoso, serviço bom, porém o sabor poderia melhorar e o preço está elevado.",Ambiente,0,6,511046
+250836,serviço,bom,positivo,0.963407814128473,"Ambiente gostoso, serviço bom, porém o sabor poderia melhorar e o preço está elevado.",serviço,0,2,511046
+250838,Nível,europeu,positivo,0.9436008676789588,"Nível europeu.",Nível,0,2,511047
+250839,preço,ótimo,positivo,0.9884785196216967,"Local limpo, agradável, bem localizado, a pizza é incrível com um preço ótimo.",preço,0,5,511047
+250840,sabor,maravilhoso,positivo,0.9917564567653908,"Não tem o que falar, sempre aquele mesmo sabor maravilhoso e serviço impecável.",sabor,0,3,511049
+250841,serviço,impecável,positivo,0.9919202716297788,"Não tem o que falar, sempre aquele mesmo sabor maravilhoso e serviço impecável.",serviço,0,2,511049
+250842,sabor,mesmo,positivo,0.7844144882202527,"Não tem o que falar, sempre aquele mesmo sabor maravilhoso e serviço impecável.",sabor,0,3,511049
+250920,carro,particular,positivo,0.9182217343578484,"Quando liguei e falei, demorou 15 minutos o gerente chegou no carro particular dele e trouxe minha pizza de frango com catupiry.",carro,0,3,511073
+250921,tempos,bons,positivo,0.9566941794404544,"Bons tempos foram esses👏👏😍",tempos,0,7,511108
+250922,atendimento,ótimo,positivo,0.9884785196216967,"Ótima pizzaria, pizza deliciosa, tempo de espera de 30 a 40 minutos, atendimento ótimo, ar-condicionado, possui fundo musical com piano, lugar para crianças, banheiro limpos, se for seu aniversário a partir de um certo valor você ganha um bolo e cantam parabéns pra você, recomendo",atendimento,0,2,511334
+250923,fundo,musical,positivo,0.9580152671755724,"Ótima pizzaria, pizza deliciosa, tempo de espera de 30 a 40 minutos, atendimento ótimo, ar-condicionado, possui fundo musical com piano, lugar para crianças, banheiro limpos, se for seu aniversário a partir de um certo valor você ganha um bolo e cantam parabéns pra você, recomendo",fundo,0,1,511334
+250924,pizza,deliciosa,positivo,0.9944337556418726,"Ótima pizzaria, pizza deliciosa, tempo de espera de 30 a 40 minutos, atendimento ótimo, ar-condicionado, possui fundo musical com piano, lugar para crianças, banheiro limpos, se for seu aniversário a partir de um certo valor você ganha um bolo e cantam parabéns pra você, recomendo",pizza,0,3,511334
+250925,Local,agradável,positivo,0.9717875145405196,"Local agradável, muito bonito, pizzas gostosas.",Local,0,7,511335
+250926,Local,bonito,positivo,0.9102855784576726,"Local agradável, muito bonito, pizzas gostosas.",Local,0,7,511335
+250927,pizzas,gostosas,positivo,0.9740407930395092,"Local agradável, muito bonito, pizzas gostosas.",pizzas,0,3,511335
+251188,batata,rústica,positivo,0.9422680412371134,"O ideal é fazer batata rústica no forno pra melhorar o prato por delivery.",batata,0,3,511697
+251488,coisa,razoável,positivo,0.8648198391165691,"E o frango sem sabor é a batata e a banana  a única coisa que tava razoável",coisa,0,2,512230
+251490,coisa,única,positivo,0.8191742592136584,"E o frango sem sabor é a batata e a banana  a única coisa que tava razoável",coisa,0,2,512230
+251492,super,passada,positivo,0.6447227191413238,"Muito ruim parece que o arroz foi de minutos dias a cenoura, do arroz a lagrega  tb super cozida passada!!",super,0,2,512230
+251497,Comida,servida,positivo,0.9281100169389336,"Comida muito bem servida.",Comida,0,3,512250
+251499,massa,crua,negativo,-0.6808780075981427,"Pizza veio tá literalmente com a massa crua",massa,0,3,512271
+251489,ambiente,ótimo,positivo,0.9884785196216967,"Fui pela primeira vez  neste local, e achei maravilhoso, atendimento de primeira, ambiente ótimo, e sem distinção de cliente pelas roupas simples que esvamos vestindo, pois estavamos em um tú pela praia!",ambiente,0,6,512551
+251491,roupas,simples,positivo,0.9017521810928116,"Fui pela primeira vez  neste local, e achei maravilhoso, atendimento de primeira, ambiente ótimo, e sem distinção de cliente pelas roupas simples que esvamos vestindo, pois estavamos em um tú pela praia!",roupas,0,2,512551
+251493,qualidade,ótima,positivo,0.9863168364740988,"Local exelente até o presente momento sup recomendo, opções de pizzas exelentes e qualidade ótima!",qualidade,0,5,512551
+251494,Local,exelente,positivo,0.9928909952606636,"Local exelente até o presente momento sup recomendo, opções de pizzas exelentes e qualidade ótima!",Local,0,7,512551
+251495,momento,presente,positivo,0.9160109789569992,"Local exelente até o presente momento sup recomendo, opções de pizzas exelentes e qualidade ótima!",momento,0,2,512551
+251496,pizzas,exelentes,positivo,1,"Local exelente até o presente momento sup recomendo, opções de pizzas exelentes e qualidade ótima!",pizzas,0,3,512551
+251498,atendimento,excelentes,positivo,0.9879496239920268,"Comida e atendimento excelentes!",atendimento,0,2,512553
+251500,atendimento,formidável,positivo,0.9888551165146908,"Aconchegante, atendimento formidável",atendimento,0,2,512554
+251835,filha,velha,positivo,0.5890625,"@natalia_valmeida Tem sim, de altura, só pode até 1.40 m. Minha filha mais velha não pode mais brincar :(",filha,0,3,512924
+252538,serviço,bom,positivo,0.963407814128473,"Bom serviço.",serviço,0,2,514675
+252539,queijo,estranho,positivo,0.5313214449016919,"A pizza veio com um queijo estranho como se estivesse acabado de ser descongelado.",queijo,0,3,514676
+252668,comida,ótima,positivo,0.9863168364740988,"Ótima comida, bons profissionais !",comida,0,3,514981
+252827,massa,fina,positivo,0.8677462887989204,"A Pizza é gostosa e tem a opção de massa mais grossa e massa fina.",massa,0,3,515319
+252828,massa,grossa,positivo,0.6145958986731002,"A Pizza é gostosa e tem a opção de massa mais grossa e massa fina.",massa,0,3,515319
+252829,espaço,kids,positivo,0.9295942720763724,"O espaço kids é bem equipado e ajuda muito para quem vai com crianças.",espaço,0,6,515319
+254077,preço,justo,positivo,0.9878059534157188,"Comida excelente com preço justo!",preço,0,5,517649
+254078,vezes,voltaria,positivo,0.8282651498577992,"Voltaria mil vezes!",vezes,0,3,517649
+254079,Comida,excelente,positivo,0.9919043535940204,"Comida excelente com preço justo!",Comida,0,3,517649
+254366,ambiente,bom,positivo,0.963407814128473,"Comida boa, ambiente bom, climatizado, com tv e área de lazer para crianças.",ambiente,0,6,518446
+254367,Comida,boa,positivo,0.9500086894910632,"Comida boa, ambiente bom, climatizado, com tv e área de lazer para crianças.",Comida,0,3,518446
+254368,custo,benefício,positivo,0.9564799560680944,"Ótimo custo benefício, refeição muito boa!",custo,0,5,518447
+254369,refeição,boa,positivo,0.9500086894910632,"Ótimo custo benefício, refeição muito boa!",refeição,0,3,518447
+254791,local,ótimo,positivo,0.9884785196216967,"Um ótimo local, indico para todos.",local,0,7,519194
+254792,local,indico,positivo,0.9252396623265132,"Um ótimo local, indico para todos.",local,0,7,519194
+254911,custo,benefício,positivo,0.9564799560680944,"Excelente custo benefício!!",custo,0,5,519646
+254912,custo,excelente,positivo,0.9919043535940204,"Excelente custo benefício!!",custo,0,5,519646
+255013,decoração,moderna,positivo,0.9798687089715536,"Já o ambiente é incrível de bonito e decorado, há salas e banheiros com uma estrutura e decoração bem moderna e até  relativamente luxuosa.",decoração,0,6,520203
+255534,experiência,ruim,negativo,-0.6731793159462143,"Fui morrendo de fome pra um local que costumo gostar de pedir e tive uma experiência ruim :p",experiência,0,4,521546
+256502,Lugar,super,positivo,0.9630962115017716,"Lugar super agradável, com ótimo cardápio e excelente atendimento.",Lugar,0,7,523981
+256503,Lugar,agradável,positivo,0.9717875145405196,"Lugar super agradável, com ótimo cardápio e excelente atendimento.",Lugar,0,7,523981
+256504,atendimento,excelente,positivo,0.9919043535940204,"Lugar super agradável, com ótimo cardápio e excelente atendimento.",atendimento,0,2,523981
+257172,Comida,boa,positivo,0.9500086894910632,"Comida boa mas muito caro o self-service.",Comida,0,3,524444
+257171,paz,emana,positivo,0.932533013205282,"Um lugar amplo, claro que formam um ambiente que emana paz!",paz,0,8,524445
+257173,lugar,amplo,positivo,0.9838031370766084,"Um lugar amplo, claro que formam um ambiente que emana paz!",lugar,0,7,524445
+257245,música,boa,positivo,0.9500086894910632,"Ambiente agradável, boa música do pianista.",música,0,6,524875
+257246,Ambiente,agradável,positivo,0.9717875145405196,"Ambiente agradável, boa música do pianista.",Ambiente,0,6,524875
+257269,atendimento,ótimo,positivo,0.9884785196216967,"Um ótimo atendimento com tudo os preços não são  atrativos",atendimento,0,2,525111
+257270,pizzas,grandes,positivo,0.9327377824487652,"Infelizmente fomos hoje ,em família  pedimos 3 pizzas grandes.",pizzas,0,3,525113
+257271,massa,horrível,negativo,-0.9259803921568628,"Tivemos que esperar 50 minutos e o pior as três vinheram frias, a massa horrível e o recheio de péssima qualidade.",massa,0,3,525113
+257272,qualidade,péssima,negativo,-0.923064085447263,"Tivemos que esperar 50 minutos e o pior as três vinheram frias, a massa horrível e o recheio de péssima qualidade.",qualidade,0,5,525113
+257273,experiência,péssima,negativo,-0.923064085447263,"Ressalto que o restaurante estava quase vazio o que não justifica de forma alguma nossa péssima experiência.",experiência,0,4,525113
+257274,atendimento,local,positivo,0.934324880262928,"Excelente atendimento, local e comida diferenciado.",atendimento,0,2,525115
+257275,atendimento,excelente,positivo,0.9919043535940204,"Excelente atendimento, local e comida diferenciado.",atendimento,0,2,525115
+257528,pena,boa,positivo,0.9500086894910632,"Não tem 👎
+Mas pizza boa só era grande o tabelião do preço mas vale a pena muito boa só não é melhor porque não tem pra ir com ele vai mais",pena,0,5,527361
+257529,pizza,boa,positivo,0.9500086894910632,"Não tem 👎
+Mas pizza boa só era grande o tabelião do preço mas vale a pena muito boa só não é melhor porque não tem pra ir com ele vai mais",pizza,0,3,527361
+257533,música,boa,positivo,0.9500086894910632,"Ambiente agradável, boa música do pianista.",música,0,6,527362
+257534,Ambiente,agradável,positivo,0.9717875145405196,"Ambiente agradável, boa música do pianista.",Ambiente,0,6,527362
+257530,massa,mole,positivo,0.688470066518847,"Pedi a pizza meio a meio sabores calabresa e frango, para meu gosto não estava muito bom para o quanto paguei, o frango estava bem seco, a massa muito mole.",massa,0,3,527363
+257531,pizza,meio,positivo,0.8468167917709202,"Pedi a pizza meio a meio sabores calabresa e frango, para meu gosto não estava muito bom para o quanto paguei, o frango estava bem seco, a massa muito mole.",pizza,0,3,527363
+257532,sabores,calabresa,positivo,0.8383808095952024,"Pedi a pizza meio a meio sabores calabresa e frango, para meu gosto não estava muito bom para o quanto paguei, o frango estava bem seco, a massa muito mole.",sabores,0,4,527363
+257562,gestão,boa,positivo,0.9500086894910632,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",gestão,0,8,528535
+257563,indicador,importante,positivo,0.9089478859390364,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",indicador,0,8,528535
+257564,lugar,acessível,positivo,0.9861425716189208,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",lugar,0,7,528535
+257565,pizza,ótima,positivo,0.9863168364740988,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",pizza,0,3,528535
+257566,atendimento,bom,positivo,0.963407814128473,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",atendimento,0,2,528535
+257567,preço,justo,positivo,0.9878059534157188,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",preço,0,5,528535
+257568,gaçóns,atenciosos,positivo,0.9786146331587072,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",gaçóns,0,8,528535
+257569,torta,boa,positivo,0.9500086894910632,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",torta,0,3,528535
+257570,lugar,familiar,positivo,0.9784343859997026,"Um lugar realmente familiar, acessível com preço justo
+gaçóns atenciosos, falo isso me baseando em diversas experiências
+desde a torta (muito boa) entregue ao aniversariante de graça até o estacionamento, a ótima pizza.. existe um indicador muito importante, funcionários apresentam estar bem em estar ali, o reflexo da boa gestão impacta nos funcionários que reflete no bom atendimento!",lugar,0,7,528535
+257656,feliz,aniversário,positivo,0.8561808241098813,"Meus parabéns um feliz aniversário e que Deus continue li abençoando com muita saúde e felicidades.",feliz,0,4,528557
+257659,homem,grande,positivo,0.9313906357307334,"Para mim foi uma honra trabalhar para esse grande homem um exemplo a ser seguido.",homem,0,8,528557
+257657,feliz,aniversário,positivo,0.8561808241098813,"Um feliz aniversário para esse homem de Deus.",feliz,0,4,528558
+257660,Parabéns,presente,positivo,0.9160109789569992,"Parabéns senhor Ivanildo, Deus seja sempre presente na sua vida, e que a sua graça e bondade esteja sempre ao seu alcance, acompanhado com todas bençãos que ele tem para seus filhos, parabéns,👏👏👏👏👏",Parabéns,0,8,528560
+257661,homem,bom,positivo,0.963407814128473,"Feliz aniversário bom homem 👏",homem,0,8,528566
+257658,Parabéns,grande,positivo,0.9313906357307334,"Parabéns grande guerreiro!",Parabéns,0,8,528568
+257696,funcionário,primeiro,positivo,0.7211174242424242,"O primeiro funcionário que me atendeu foi extremamente atencioso e cordial, enquanto a moça que finalizou o atendimento poderia ter sido mais cuidadosa.",funcionário,0,4,530967
+257697,ponto,certo,positivo,0.8950131233595799,"A comida estava muito saborosa e no ponto certo, proporcionando uma refeição leve, mas satisfatória.",ponto,0,7,530967
+257698,experiência,especial,positivo,0.9493436684454484,"Almocei com minha namorada enquanto apreciávamos um pianista tocando ao vivo, o que tornou a experiência ainda mais especial e agradável.",experiência,0,4,530967
+257699,acomodação,aconchegante,positivo,0.9893555149793738,"O ambiente é excelente, com uma acomodação muito aconchegante e bem cuidada.",acomodação,0,8,530967
+257700,escolha,certeira,positivo,0.9699248120300752,"Optamos pelo cardápio kids, já que ambos comemos pouco, e foi uma escolha certeira.",escolha,0,4,530967
+257701,preços,justos,positivo,0.9881247330200768,"Além disso, achei os preços justos considerando o nível do ambiente e a experiência oferecida.",preços,0,5,530967
+257702,experiência,positiva,positivo,0.8702667105696411,"No geral, foi uma experiência positiva e certamente voltaria.",experiência,0,4,530967
+257746,pizza,melhor,positivo,0.9327033074064036,"A melhor pizza do Recife",pizza,0,3,532188
+257747,bolo,pequeno,positivo,0.9113647114474928,"Outro ponto positivo é que em datas de aniversário, normalmente, ganhamos um pequeno bolo de chocolate, dependendo do valor da conta.",bolo,0,3,532189
+257748,ponto,positivo,positivo,0.7539739027283511,"Outro ponto positivo é que em datas de aniversário, normalmente, ganhamos um pequeno bolo de chocolate, dependendo do valor da conta.",ponto,0,7,532189
+257850,entregador,excelente,positivo,0.9919043535940204,"Excelente entregador.",entregador,0,8,533461
+257851,pizza,menor,positivo,0.7461994809047089,"Ou seja, eu fiquei sem comer porque não dava mais tempo de pedir outra coisa devido ao meu horário e meus pais já tinham pedindo uma pizza menor pq eu iria comer o couvert.",pizza,0,3,535120
+257852,movimento,maior,positivo,0.8554893365512486,"Simplesmente não estão preparados para um dia de maior movimento.",movimento,0,8,535120
+257853,pizza,média,positivo,0.9209728586535072,"Cheguei e pedi um couvert pois estava sem fome e só queria beliscar e então meus pais pediram uma pizza média pros 2.",pizza,0,3,535120
+257854,garçonete,primeira,positivo,0.8894017599308761,"Depois de muito tempo aguardando o tal couvert foi que outro garçom veio me avisar que não tinha e enquanto isso a primeira garçonete que nos atendeu ficou MENTINDO dizendo que estava vindo o prato (nós já sabíamos que não tinha) depois de muito mais tempo que ela veio dizer que não tinha.",garçonete,0,2,535120
+257855,pratos,indisponíveis,negativo,-0.5873015873015873,"Enfim, melhorem essa administração e falem logo os pratos indisponíveis ao invés de deixar o cliente esperando algo que não virá e orientem a equipe de vocês a serem resolutivos e não com mentirinhas dizendo que foram na cozinha verificar sem ter ido.",pratos,0,3,535120
+257856,dia,atípico,positivo,0.696551724137931,"E eu nem to falando de um feriado ou dia atípico, estou falando de um fim de semana qualquer que todos os estabelecimentos deveriam estar habituados.",dia,0,3,535120
+258147,Ambiente,agradável,positivo,0.9717875145405196,"Ambiente agradável com comida muito boa.",Ambiente,0,6,539895
+258148,comida,boa,positivo,0.9500086894910632,"Ambiente agradável com comida muito boa.",comida,0,3,539895
+258266,pizza,portuguesa,positivo,0.924523693209575,"Pedimos uma pizza meia portuguesa e camarão, a massa da pizza não é das melhores e o recheio da parte portuguesa achei pouco e bem estranho, muita ervilha e milho, sem o presunto, enfim em Jaboatão podemos encontrar pizzas bem melhores.",pizza,0,3,541593
+258267,parte,portuguesa,positivo,0.924523693209575,"Pedimos uma pizza meia portuguesa e camarão, a massa da pizza não é das melhores e o recheio da parte portuguesa achei pouco e bem estranho, muita ervilha e milho, sem o presunto, enfim em Jaboatão podemos encontrar pizzas bem melhores.",parte,0,6,541593
+258268,pizzas,melhores,positivo,0.9302396840528394,"Pedimos uma pizza meia portuguesa e camarão, a massa da pizza não é das melhores e o recheio da parte portuguesa achei pouco e bem estranho, muita ervilha e milho, sem o presunto, enfim em Jaboatão podemos encontrar pizzas bem melhores.",pizzas,0,3,541593
+258401,massa,fina,positivo,0.8677462887989204,"Quando fui lá me informaram que eu podia pedir a pizza da forma que eu quisesse, massa mais fina, mais assada.",massa,0,3,541865
+258402,porcaria,molenga,negativo,-0.748091603053435,"E eu pedi, mas enviaram uma porcaria molenga, seca, parecia que nem mussarela e molho tinha.",porcaria,0,8,541865
+258403,restaurantes,melhores,positivo,0.9302396840528394,"Um dos melhores restaurantes de Recife.",restaurantes,0,3,541867
+258417,salão,cheio,positivo,0.8755543375355025,"O problema maior veio depois, quando nossa mesa já estava completa e o salão mais cheio.",salão,0,1,541972
+258418,ambiente,agradável,positivo,0.9717875145405196,"Apesar dos bons sabores e do ambiente agradável, os problemas com atendimento e tempo de espera comprometeram a experiência.",ambiente,0,6,541972
+258419,problema,maior,positivo,0.8554893365512486,"O problema maior veio depois, quando nossa mesa já estava completa e o salão mais cheio.",problema,0,2,541972
+258420,erro,pontual,positivo,0.8374233128834356,"Até aí, algo que poderia ter sido um erro pontual na cozinha.",erro,0,3,541972
+258421,sabores,bons,positivo,0.9566941794404544,"Apesar dos bons sabores e do ambiente agradável, os problemas com atendimento e tempo de espera comprometeram a experiência.",sabores,0,4,541972
+258422,ponto,positivo,positivo,0.7539739027283511,"Utilizei o sanitário e novamente tudo estava impecável, ponto positivo para a higiene do local.",ponto,0,7,541972
+258423,diferencial,interessante,positivo,0.9412630215996703,"O fato de não cobrarem os 10% de serviço é um diferencial interessante, e o couvert de R$ 3,00 não é abusivo, considerando outros restaurantes.",diferencial,0,6,541972
+258424,situação,desagradável,negativo,-0.6222444889779559,"Logo na chegada, fui surpreendido por uma situação desagradável.",situação,0,3,541972
+258425,pizza,doce,positivo,0.9383528559352736,"Algumas pizzas salgadas estavam excelentes, mas a pizza doce de M&Ms deixou a desejar – parecia que faltava algo na massa ou nos ingredientes para realçar o sabor.",pizza,0,3,541972
+258499,Prato,desproporcional,positivo,0.5211726384364821,"Prato desproporcional, muito arroz duro e pouco acompanhamento.",Prato,0,3,542121
+258500,paciência,total,positivo,0.5498240563019834,"Excelente,  pois o atendimento foi rápido e com total paciência da atendente.",paciência,0,8,542122
+258714,economia,franciscana,positivo,0.6,"Me senti lesado em pagar uma pizza mais cara do cardápio e ela me se entregue com economia franciscana.",economia,0,8,546774
+258715,pratos,cheios,positivo,0.9217824128940508,"Nas 3 vezes que fui, os garçons retiraram os pratos ainda cheios sem autorização, pedidos errados e muita demora pra resolver.",pratos,0,3,546776
+258855,clássico,verdadeiro,positivo,0.866601752677702,"Um verdadeiro clássico que atravessa gerações na minha família!",clássico,0,2,548201
+258856,qualidade,impecável,positivo,0.9919202716297788,"O sabor é inconfundível, a qualidade impecável e o atendimento excelente.",qualidade,0,5,548201
+258857,custo,adicional,positivo,0.954984246162097,"Além disso, é possível realizar festas de aniversário, decorar o espaço e reservar para os convidados sem custo adicional.",custo,0,5,548201
+258858,atendimento,excelente,positivo,0.9919043535940204,"O sabor é inconfundível, a qualidade impecável e o atendimento excelente.",atendimento,0,2,548201
+258859,parquinho,grande,positivo,0.9313906357307334,"A unidade de Olinda ainda conta com um parquinho grande e recreadora, garantindo a diversão das crianças.",parquinho,0,6,548201
+258860,escolha,favorita,positivo,0.9593425605536332,"Desde 1996, quando cheguei a Recife com apenas 6 anos, acompanhei todo o crescimento do restaurante e, até hoje, continua sendo minha escolha favorita.",escolha,0,4,548201
+258928,tomate,seco,positivo,0.5672187567218757,"A pizza de quatro queijos e tomate seco estava maravilhosa, bem assadinha 😋",tomate,0,3,549669
+259014,música,boa,positivo,0.9500086894910632,"Um lugar incrível, comida boa, ambiente aconchegante, música boa, parquinho para as crianças e um atendimento maravilhoso principalmente em relação a comemoração de aniversário.",música,0,6,551098
+259015,comida,boa,positivo,0.9500086894910632,"Um lugar incrível, comida boa, ambiente aconchegante, música boa, parquinho para as crianças e um atendimento maravilhoso principalmente em relação a comemoração de aniversário.",comida,0,3,551098
+259016,ambiente,aconchegante,positivo,0.9893555149793738,"Um lugar incrível, comida boa, ambiente aconchegante, música boa, parquinho para as crianças e um atendimento maravilhoso principalmente em relação a comemoração de aniversário.",ambiente,0,6,551098
+259017,lugar,incrível,positivo,0.9766774641369736,"Um lugar incrível, comida boa, ambiente aconchegante, música boa, parquinho para as crianças e um atendimento maravilhoso principalmente em relação a comemoração de aniversário.",lugar,0,7,551098
+259018,atendimento,maravilhoso,positivo,0.9917564567653908,"Um lugar incrível, comida boa, ambiente aconchegante, música boa, parquinho para as crianças e um atendimento maravilhoso principalmente em relação a comemoração de aniversário.",atendimento,0,2,551098
+259019,preços,justos,positivo,0.9881247330200768,"Ótima comida, preços justos.",preços,0,5,551099
+259395,gostinho,delicioso,positivo,0.9937293729372936,"o gostinho delicioso nunca muda, cresci aí... nunca deixou de ser um estabelecimento excelente!",gostinho,0,2,552682
+259396,estabelecimento,excelente,positivo,0.9919043535940204,"o gostinho delicioso nunca muda, cresci aí... nunca deixou de ser um estabelecimento excelente!",estabelecimento,0,2,552682
+260026,atendimento,bom,positivo,0.963407814128473,"Excelente comida, bom atendimento e excelente comida.",atendimento,0,2,555954
+260027,comida,excelente,positivo,0.9919043535940204,"Excelente comida, bom atendimento e excelente comida.",comida,0,3,555954
+260028,refeição,cartão,positivo,0.7816933638443936,"Aceita pagamento com cartão refeição.",refeição,0,3,555954
+260025,Lugar,tranquilo,positivo,0.9794048897593024,"Lugar tranquilo no período da tarde.",Lugar,0,7,556017
+260029,atendimento,impecável,positivo,0.9919202716297788,"A pizza é maravilhosa, e o atendimento, impecável.",atendimento,0,2,556019
+260064,espaço,kids,positivo,0.9295942720763724,"O ambiente é maravilhoso, o espaço kids é muito massa, as pizzas são muito saborosas.",espaço,0,6,556095
+260065,Carne,deliciosa,positivo,0.9944337556418726,"Carne de sol deliciosa",Carne,0,3,556096
+260193,boca,incrível,positivo,0.9766774641369736,"Kkkk derrete na boca, incrível.",boca,0,3,556363
+260194,pizza,gostosa,positivo,0.9696347552784326,"Perfeito, qual o segredo dá pizza tão gostosa?",pizza,0,3,556363
+260297,pizza,melhor,positivo,0.9327033074064036,"A melhor pizza 🍕 do Recife 💕
+A de camarão 🍤 com catupiry é perfeita 💕",pizza,0,3,556586
+260298,pratos,saborosos,positivo,0.9829658605974396,"Boa música ao piano e pratos muito saborosos.",pratos,0,3,556664
+260299,Ambiente,acolhedor,positivo,0.9893299952312828,"Ambiente muito acolhedor e sofisticado.",Ambiente,0,6,556664
+260300,Atendimento,profissional,positivo,0.8862255232950709,"Atendimento profissional.",Atendimento,0,2,556664
+260301,música,boa,positivo,0.9500086894910632,"Boa música ao piano e pratos muito saborosos.",música,0,6,556664
+260393,frango,melhor,positivo,0.9327033074064036,"O melhor frango a parmegiana do Recife é de Olinda.",frango,0,3,556778
+260394,atendimento,telefônico,positivo,0.7045454545454546,"O atendimento telefônico é horrível, os atendentes não tem o mínimo de paciência!",atendimento,0,2,556780
+260465,localização,excelente,positivo,0.9919043535940204,"Excelente localização, estacionamento, ambiente climatizado, limpo e organizado.",localização,0,7,557077
+260466,Pratos,deliciosos,positivo,0.9957864092545776,"Pratos deliciosos e preços adequados.",Pratos,0,3,557077
+260467,espaço,kids,positivo,0.9295942720763724,"Ambiente bom, espaço kids , a pizza maravilhosa como sempre , os preços salgados mas faz jus a qualidade!!",espaço,0,6,557079
+260468,pizza,maravilhosa,positivo,0.9906806299262348,"Ambiente bom, espaço kids , a pizza maravilhosa como sempre , os preços salgados mas faz jus a qualidade!!",pizza,0,3,557079
+260469,Ambiente,bom,positivo,0.963407814128473,"Ambiente bom, espaço kids , a pizza maravilhosa como sempre , os preços salgados mas faz jus a qualidade!!",Ambiente,0,6,557079
+260470,custo,benefício,positivo,0.9564799560680944,"Comida excelente, com custo benefício ótimo e atendimento muito bom",custo,0,5,557081
+260471,Comida,excelente,positivo,0.9919043535940204,"Comida excelente, com custo benefício ótimo e atendimento muito bom",Comida,0,3,557081
+260472,atendimento,bom,positivo,0.963407814128473,"Comida excelente, com custo benefício ótimo e atendimento muito bom",atendimento,0,2,557081
+260473,custo,ótimo,positivo,0.9884785196216967,"Comida excelente, com custo benefício ótimo e atendimento muito bom",custo,0,5,557081
+260542,cara,feia,negativo,-0.6835016835016835,"Não gostei, ainda mais porque a atendente estava com a cara feia.",cara,0,2,557284
+260543,atendimento,péssimo,negativo,-0.925369720994054,"Hoje, dia 05.04.25 que atendimento péssimo, Pizzaria Atlântico.",atendimento,0,2,557285
+260544,lugar,pior,negativo,-0.8972922502334267,"De todos os lugares que já fui aq foi o pior lugar!",lugar,0,7,557286
+260545,mal,cheiro,positivo,0.6546717171717171,"Já no ambiente Kids é super espaçoso e tem bastante variedade de brinquedos porém estava com um mal cheiro, acho que era de mofo.",mal,0,3,557289
+260616,comida,agradável,positivo,0.9717875145405196,"Lugar e comida agradável, apenas o serviço poderia melhorar.",comida,0,3,557388
+260632,Ambiente,familiar,positivo,0.9784343859997026,"Ambiente familiar e muito badalada.",Ambiente,0,6,557490
+260633,preço,razoável,positivo,0.8648198391165691,"De preço razoável.",preço,0,5,557490
+260805,ambiente,familiar,positivo,0.9784343859997026,"É um ambiente familiar com boa variedade de pratos, local para as crianças brincarem, com pratos deliciosos, opcoes de tamanho e preços bons",ambiente,0,6,558345
+260806,pratos,local,positivo,0.934324880262928,"É um ambiente familiar com boa variedade de pratos, local para as crianças brincarem, com pratos deliciosos, opcoes de tamanho e preços bons",pratos,0,3,558345
+260807,pratos,deliciosos,positivo,0.9957864092545776,"É um ambiente familiar com boa variedade de pratos, local para as crianças brincarem, com pratos deliciosos, opcoes de tamanho e preços bons",pratos,0,3,558345
+260808,variedade,boa,positivo,0.9500086894910632,"É um ambiente familiar com boa variedade de pratos, local para as crianças brincarem, com pratos deliciosos, opcoes de tamanho e preços bons",variedade,0,3,558345
+260809,preços,bons,positivo,0.9566941794404544,"É um ambiente familiar com boa variedade de pratos, local para as crianças brincarem, com pratos deliciosos, opcoes de tamanho e preços bons",preços,0,5,558345
+260891,couvert,artistico,positivo,0.7288888888888889,"Excelente local e atendimento, só não gosto de pagar a taxa de couvert artistico sempre.",couvert,0,4,558453
+260930,garçom,mesmo,positivo,0.7844144882202527,"É só uma sugestão, quando tiver muito pedido de hambúrguer seria bom colocar os nomes deles para o cliente e até mesmo garçom ou a garçonete sabe qual é qual, se não tiver o que pediu é bom avisar antes para não ficar muito longa a esposa do lanche.",garçom,0,2,558692
+260931,sabe,garçonete,positivo,0.6626967247979583,"É só uma sugestão, quando tiver muito pedido de hambúrguer seria bom colocar os nomes deles para o cliente e até mesmo garçom ou a garçonete sabe qual é qual, se não tiver o que pediu é bom avisar antes para não ficar muito longa a esposa do lanche.",sabe,0,2,558692
+261074,Pratos,deliciosos,positivo,0.9957864092545776,"Pratos deliciosos, preço adequado",Pratos,0,3,559052
+261075,preço,adequado,positivo,0.9371962616822429,"Pratos deliciosos, preço adequado",preço,0,5,559052
+261373,hambúrgueres,artesanais,positivo,0.978304074196754,"As Melhores pizzas, pratos diversificados, hambúrgueres artesanais, sobremesas, entre outros... As crianças se divertem no maravilhoso espaço kids, e também, "É Perfeito para realizar eventos", Tudo isso, "só no Restaurante e Pizzaria Atlântico!"",hambúrgueres,0,4,559615
+261374,espaço,kids,positivo,0.9295942720763724,"As Melhores pizzas, pratos diversificados, hambúrgueres artesanais, sobremesas, entre outros... As crianças se divertem no maravilhoso espaço kids, e também, "É Perfeito para realizar eventos", Tudo isso, "só no Restaurante e Pizzaria Atlântico!"",espaço,0,6,559615
+261375,espaço,maravilhoso,positivo,0.9917564567653908,"As Melhores pizzas, pratos diversificados, hambúrgueres artesanais, sobremesas, entre outros... As crianças se divertem no maravilhoso espaço kids, e também, "É Perfeito para realizar eventos", Tudo isso, "só no Restaurante e Pizzaria Atlântico!"",espaço,0,6,559615
+261376,pizzas,melhores,positivo,0.9302396840528394,"As Melhores pizzas, pratos diversificados, hambúrgueres artesanais, sobremesas, entre outros... As crianças se divertem no maravilhoso espaço kids, e também, "É Perfeito para realizar eventos", Tudo isso, "só no Restaurante e Pizzaria Atlântico!"",pizzas,0,3,559615
+261450,Custo,beneficio,positivo,0.9619030898876404,"Custo beneficio e o atendimento nota 10.",Custo,0,5,559838
+261621,papo,furado,negativo,-0.7755102040816326,"E sei que logo abaixo vai vir um papo furado de que "nos agradecemos o feedback faremos o melhor blablabla" mas a experiência de muitos está sendo ruim e nada muda!!!",papo,0,8,560054
+261622,lado,esquerdo,positivo,0.8396226415094341,"E olha que nesse dia a casa nem tava cheia, o lado esquerdo estava legal mas o direito estava desértico.. ou seja, se estivesse cheio msm aí provavelmente metade não seria atendido.",lado,0,1,560054
+261623,especialidade,amigo,positivo,0.9255707145751724,"Pizza não é sua especialidade amigo.",especialidade,0,3,560054
+261624,sobremesa,clássica,positivo,0.9558693733451016,"Cozinha levou uma eternidade para preparar uma cartola, sobremesa clássica de Pernambuco.",sobremesa,0,3,560054
+261754,pedido,último,positivo,0.7850150602409639,"Sempre uso os serviços da Pizzaria, porém em meu último pedido, ontem dia 29/04, solicitei um frango à Salute, que foi literalmente horrível.",pedido,0,2,560299
+261755,frango,seco,positivo,0.5672187567218757,"Um arroz com farelo de brócolis, o peito de frango extremamente seco, e o “misto de salada”, alface, 3 rodelas de tomate e 2 folhas de rúculas.",frango,0,3,560299
+261898,Recepção,educada,positivo,0.7702420077681505,"Recepção muito educada galera da noite 20h  diante",Recepção,0,3,560582
+261897,falta,completa,positivo,0.7235258724428401,"Uma completa falta de respeito com  o consumidor!",falta,0,2,560584
+261899,coisa,mesma,positivo,0.7114020731042008,"Sempre a mesma coisa.",coisa,0,2,560585
+262164,modelo,linda,positivo,0.9637286684200868,"Que modelo linda!!",modelo,0,8,561590
+262158,comida,boa,positivo,0.9500086894910632,"Bom atendimento, e comida boa com preço justo.",comida,0,3,561603
+262159,preço,justo,positivo,0.9878059534157188,"Bom atendimento, e comida boa com preço justo.",preço,0,5,561603
+262161,atendimento,bom,positivo,0.963407814128473,"Bom atendimento, e comida boa com preço justo.",atendimento,0,2,561603
+262155,lugar,melhor,positivo,0.9327033074064036,"Que orgulho... desconheço lugar melhor ❤️😍",lugar,0,7,561607
+262148,memórias,afetivas,positivo,0.8235294117647058,"Melhor Lugar de memórias afetivas para se estar.",memórias,0,8,561608
+262160,Lugar,melhor,positivo,0.9327033074064036,"Melhor Lugar de memórias afetivas para se estar.",Lugar,0,7,561608
+262152,restaurante,melhor,positivo,0.9327033074064036,"O melhor restaurante do mundo",restaurante,0,1,561629
+262144,escolha,melhor,positivo,0.9327033074064036,"Muito boa, pelo menos na sexta feira dia 02/05/25, a comida que escolhemos estava bem preparada e gostosa, inclusive fazia parte de um dos pratos que ficam na promoção de segunda a sexta, o ar estava bem climatizado, super agradável, não tinha muita gente, foi na hora do almoço, foi a melhor escolha naquele dia.",escolha,0,4,562486
+262145,sexta,feira,positivo,0.8724165341812401,"Muito boa, pelo menos na sexta feira dia 02/05/25, a comida que escolhemos estava bem preparada e gostosa, inclusive fazia parte de um dos pratos que ficam na promoção de segunda a sexta, o ar estava bem climatizado, super agradável, não tinha muita gente, foi na hora do almoço, foi a melhor escolha naquele dia.",sexta,0,8,562486
+262147,super,agradável,positivo,0.9717875145405196,"Muito boa, pelo menos na sexta feira dia 02/05/25, a comida que escolhemos estava bem preparada e gostosa, inclusive fazia parte de um dos pratos que ficam na promoção de segunda a sexta, o ar estava bem climatizado, super agradável, não tinha muita gente, foi na hora do almoço, foi a melhor escolha naquele dia.",super,0,2,562486
+262146,custo,benefício,positivo,0.9564799560680944,"Ótimo custo benefício para ir com a família!",custo,0,5,562487
+262150,atendimento,bom,positivo,0.963407814128473,"Frequento desde criança,  estava acostumado com um bom atendimento.",atendimento,0,2,562489
+262157,feriado,pleno,positivo,0.6881918819188192,"Mas, notei uma redução de pessoal e isso, em pleno feriado, prejudicou muito.",feriado,0,8,562489
+262163,Espera,longa,positivo,0.8683510638297872,"Espera longa e garçons sobrecarregados.",Espera,0,2,562489
+262149,bolo,gratuito,positivo,0.9675696299122472,"Preço justo e comida saborosa, e ainda forneceram bolo gratuito e cantaram parabéns.",bolo,0,3,562490
+262154,Atendimento,excelente,positivo,0.9919043535940204,"Atendimento excelente do garçom Bruno.",Atendimento,0,2,562490
+262156,Preço,justo,positivo,0.9878059534157188,"Preço justo e comida saborosa, e ainda forneceram bolo gratuito e cantaram parabéns.",Preço,0,5,562490
+262162,comida,saborosa,positivo,0.9790597031131242,"Preço justo e comida saborosa, e ainda forneceram bolo gratuito e cantaram parabéns.",comida,0,3,562490
+262151,frango,seco,positivo,0.5672187567218757,"Um arroz com farelo de brócolis, o peito de frango extremamente seco, e o “misto de salada”, alface, 3 rodelas de tomate e 2 folhas de rúculas.",frango,0,3,562492
+262153,pedido,último,positivo,0.7850150602409639,"Sempre uso os serviços da Pizzaria, porém em meu último pedido, ontem dia 29/04, solicitei um frango à Salute, que foi literalmente horrível.",pedido,0,2,562492
+262165,pratos,bons,positivo,0.9566941794404544,"Muitos pratos bons, na ocasião o prato que pedi deixou muito a desejar ( Maminha)",pratos,0,3,562496
+262826,experiência,melhor,positivo,0.9327033074064036,"A melhor experiência",experiência,0,4,562855
+262828,coisa,mesma,positivo,0.7114020731042008,"Mesma coisa já séculos.",coisa,0,2,562858
+262829,couvert,caro,positivo,0.7863223542244671,"E precisa mudar aquele couvert caro e sem graça de piano.",couvert,0,4,562858
+262827,Ambiente,agradável,positivo,0.9717875145405196,"Ambiente agradável comida muito boa",Ambiente,0,6,562859
+262830,Ambiente,boa,positivo,0.9500086894910632,"Ambiente agradável comida muito boa",Ambiente,0,6,562859
+262949,lugar,especial,positivo,0.9493436684454484,"Um lugar muito especial pizzaria Atlântico",lugar,0,7,562961
+263082,Dia,maravilhoso,positivo,0.9917564567653908,"Dia maravilhoso e bem produtivo 😊 Empresa e equipe top d+❤️",Dia,0,3,563341
+263079,atendimento,excelente,positivo,0.9919043535940204,"Excelente atendimento e pizza sem igual.",atendimento,0,2,563563
+263080,lugar,bom,positivo,0.963407814128473,"Muito bom lugar para uma refeição em família.",lugar,0,7,563565
+263081,Cardápio,variado,positivo,0.9897289473162414,"Cardápio muito variado e completo.",Cardápio,0,3,563565
+263284,Equipe,incrível,positivo,0.9766774641369736,"Equipe incrível ❤️",Equipe,0,2,563896
+263283,massa,fina,positivo,0.8677462887989204,"Uma questão de preferência: gosto de massa fina de pizzas, não é o oferecido.",massa,0,3,564080
+263434,Atendimento,rápido,positivo,0.9724956928378046,"Atendimento rápido e a comida muito boa.",Atendimento,0,2,564399
+263435,comida,boa,positivo,0.9500086894910632,"Atendimento rápido e a comida muito boa.",comida,0,3,564399
+263509,lado,esquerdo,positivo,0.8396226415094341,"E olha que nesse dia a casa nem tava cheia, o lado esquerdo estava legal mas o direito estava desértico.. ou seja, se estivesse cheio msm aí provavelmente metade não seria atendido.",lado,0,1,564433
+263510,sobremesa,clássica,positivo,0.9558693733451016,"Cozinha levou uma eternidade para preparar uma cartola, sobremesa clássica de Pernambuco.",sobremesa,0,3,564433
+263511,papo,furado,negativo,-0.7755102040816326,"E sei que logo abaixo vai vir um papo furado de que "nos agradecemos o feedback faremos o melhor blablabla" mas a experiência de muitos está sendo ruim e nada muda!!!",papo,0,8,564433
+263512,Comida,crua,negativo,-0.6808780075981427,"Comida crua,
+Reserva de 30 pessoas, não foi executada, isso pq fui presencialmente.",Comida,0,3,564433
+263513,Cerveja,quente,positivo,0.8406342913776016,"Cerveja quente,
+Atraso nos pedidos etc...
+
+Fecha isso poha",Cerveja,0,4,564433
+263514,especialidade,amigo,positivo,0.9255707145751724,"Pizza não é sua especialidade amigo.",especialidade,0,3,564433
+263515,restaurante,caro,positivo,0.7863223542244671,"Mais é um restaurante caro.",restaurante,0,1,564435
+263516,Comida,boa,positivo,0.9500086894910632,"Comida muito boa.",Comida,0,3,564435
+263566,Local,agradável,positivo,0.9717875145405196,"Local agradável
+Serviço alguns dias deixa a desejar mas de regra é bom
+Tem Parquinho para crianças
+Tem manobrista grauito
+Custo não tão acessivel",Local,0,7,565258
+263567,grauito,manobrista,positivo,0.9389196675900277,"Local agradável
+Serviço alguns dias deixa a desejar mas de regra é bom
+Tem Parquinho para crianças
+Tem manobrista grauito
+Custo não tão acessivel",grauito,0,8,565258
+263752,atendimento,excelente,positivo,0.9919043535940204,"Comida e atendimento excelente.",atendimento,0,2,565793
+263753,domingo,último,positivo,0.7850150602409639,"Esse episódio aconteceu no último domingo, dia 18/05 na unidade Jardim Atlântico.",domingo,0,8,565794
+263754,decepção,maior,positivo,0.8554893365512486,"Maior decepção essa noite.",decepção,0,4,565794
+263755,massa,crua,negativo,-0.6808780075981427,"Depois de uma hora e vinte minutos de espera alguém levou a pizza pra mesa, mal assada, partes da massa crua e o queijo da cobertura em algumas partes sem ter derretido.",massa,0,3,565794
+263756,banheiro,podre,negativo,-0.8582089552238806,"Ninguém merece entrar naquele banheiro podre de xixi e depois esperar uma hora e vinte minutos por uma pizza.",banheiro,0,2,565794
+263785,Local,maravilhoso,positivo,0.9917564567653908,"Local maravilhoso",Local,0,7,565933
+263827,dura,cheia,positivo,0.8201743142783902,"Horrível gastei 400 reais pedi  picanha e veio uma carne com corte de picanha super dura cheia de nervo, entregue o que vende mesmo q vc tenha q cobrar mais caro, paguei 189 so na picanha",dura,0,3,566052
+263828,carne,super,positivo,0.9630962115017716,"Horrível gastei 400 reais pedi  picanha e veio uma carne com corte de picanha super dura cheia de nervo, entregue o que vende mesmo q vc tenha q cobrar mais caro, paguei 189 so na picanha",carne,0,3,566052
+263861,Pizza,excepcional,positivo,0.9673913043478259,"Pizza sempre excepcional.",Pizza,0,3,566202
+263862,Manobrista,gratuito,positivo,0.9675696299122472,"Manobrista gratuito, ar condicionado.",Manobrista,0,8,566204
+263863,self-service,delicioso,positivo,0.9937293729372936,"Apesar do nome, tem um self-service delicioso no horário do almoço!",self-service,0,8,566204
+263864,ar,condicionado,positivo,0.8855488981415659,"Manobrista gratuito, ar condicionado.",ar,0,6,566204
+263893,Pizzaria,maior,positivo,0.8554893365512486,"A maior e melhor Pizzaria de Pernambuco",Pizzaria,0,1,566221
+263933,Pizzaria,maior,positivo,0.8554893365512486,"A maior e melhor Pizzaria de Pernambuco",Pizzaria,0,1,566221
+263985,Pizzaria,maior,positivo,0.8554893365512486,"A maior e melhor Pizzaria de Pernambuco",Pizzaria,0,1,566221
+264064,Pizzaria,maior,positivo,0.8554893365512486,"A maior e melhor Pizzaria de Pernambuco",Pizzaria,0,1,566221
+263891,ambiente,agradável,positivo,0.9717875145405196,"O ambiente agradável,  atendimento ótimo.",ambiente,0,6,566334
+263892,atendimento,ótimo,positivo,0.9884785196216967,"O ambiente agradável,  atendimento ótimo.",atendimento,0,2,566334
+264063,vez,segunda,positivo,0.7894989595005603,"Boa tarde,
+Pedi uma pizza para entregar, chegou antes da hora, até aí tudo bem, só que a massa da pizza veio mal assada, tava crua a massa, tive que assar aqui em casa, falei com o tende expliquei o que aconteceu, ficou de reportar pra loja, já  é a segunda vez que acontece",vez,0,2,567026
+264447,pizza,exorbitante,positivo,0.7011779293242405,"Preço da pizza exorbitante e chegou péssima!",pizza,0,3,567221
+269051,descaso,maior,positivo,0.8554893365512486,"Maior descaso",descaso,0,8,567715
+269052,RESTAURANTE,excelente,positivo,0.9919043535940204,"Excelente RESTAURANTE 40 anos de tradição",RESTAURANTE,0,1,567716
+277045,movimento,grande,positivo,0.9313906357307334,"Primeiramente, fui com um grupo grande, o que o foi previamente comunicado ao estabelecimento e fomos em um horário em que não havia um movimento grande, contudo, o serviço foi demorado, os garçons hora demoravam a atender as demandas do grupo, hora se atrapalhavam com os pedidos, sendo que o local estava praticamente vazio, mesmo assim alguns pedidos demoraram muito para serem servidos, alguns estavam fríos, muito salgados e os sucos com muito açúcar e alguns pedidos vieram errados.",movimento,0,8,568348
+277046,grupo,grande,positivo,0.9313906357307334,"Primeiramente, fui com um grupo grande, o que o foi previamente comunicado ao estabelecimento e fomos em um horário em que não havia um movimento grande, contudo, o serviço foi demorado, os garçons hora demoravam a atender as demandas do grupo, hora se atrapalhavam com os pedidos, sendo que o local estava praticamente vazio, mesmo assim alguns pedidos demoraram muito para serem servidos, alguns estavam fríos, muito salgados e os sucos com muito açúcar e alguns pedidos vieram errados.",grupo,0,4,568348
+277047,débito,pequeno,positivo,0.9113647114474928,"O momento de fechar a conta, foi bem estressante, os pedidos estavam misturados em várias comandas, os funcionários se atrapalharvam com os pagamentos, e quando estávamos saindo de lá ainda foi visto que ainda faltava um pequeno débito.",débito,0,2,568348
+277048,experiência,agradável,positivo,0.9717875145405196,"Estive no local e não foi uma experiência muito agradável.",experiência,0,4,568348
+277096,pizza,maravilhosa,positivo,0.9906806299262348,"De uma pizza maravilhosa, saborosa , massa fininha e suculenta pra uma massa grossa que parece um pão mal sovado.",pizza,0,3,568687
+277097,massa,grossa,positivo,0.6145958986731002,"De uma pizza maravilhosa, saborosa , massa fininha e suculenta pra uma massa grossa que parece um pão mal sovado.",massa,0,3,568687
+277098,massa,fininha,positivo,0.9860155382907879,"De uma pizza maravilhosa, saborosa , massa fininha e suculenta pra uma massa grossa que parece um pão mal sovado.",massa,0,3,568687
+277099,massa,antiga,positivo,0.8990746718312891,"Por favor voltem com a massa antiga pois pelo valor não está compensando pagar 60,70,80 numa pizza pra ela vir igual um pão recheado.",massa,0,3,568687
+277100,pizza,saborosa,positivo,0.9790597031131242,"De uma pizza maravilhosa, saborosa , massa fininha e suculenta pra uma massa grossa que parece um pão mal sovado.",pizza,0,3,568687
+277158,noite,boa,positivo,0.9500086894910632,"Boa noite aonde fica essa pizzaria tenho interesse na vaga de auxiliar de limpeza mais estou sem currículo",noite,0,8,569503
+277159,serviço,gerais,positivo,0.930756843800322,"Boa tarde aonde que fica essa pizzaria porque minha área de serviço gerais",serviço,0,2,569505
+277449,coração,todinho,positivo,0.7692307692307693,"@igabym_ Se você fosse uma pizza, seria de quatro queijos… porque derrete meu coração todinho!",coração,0,1,570191
+277450,trilha,única,positivo,0.8191742592136584,"Amor, depois de 10 anos e 3 filhos, acho que já posso pedir música no Fantástico…
+Mas a única trilha que eu quero é o som do seu riso me acompanhando pro resto da vida.",trilha,0,8,570194
+277451,👏,melhor,positivo,0.9327033074064036,"O melhor👏👏👏",👏,0,8,570195
+277509,💙,maravilhoso,positivo,0.9917564567653908,"Será maravilhoso 💙💖",💙,0,8,570461
+277510,Ambiente,perfeito,positivo,0.9923449106149058,"Ambiente perfeito !",Ambiente,0,6,570464
+277511,@isa_milenaaa,kkkkkkkk,positivo,0.8315789473684211,"@isa_milenaaa kkkkkkkk",@isa_milenaaa,0,8,570468
+277659,vez,segunda,positivo,0.7894989595005603,"Perdeu um cliente, até pq já foi a segunda vez.",vez,0,2,570890
+277720,Comida,maravilhosa,positivo,0.9906806299262348,"Comida maravilhosa, preço justo, estacionamento quase sempre tem vaga, não uso o serviço de manobrista prefiro estacionar sozinha, música ambiente,  parquinho seguro vc visualiza as câmeras pelo seu celular,  não cobram 10%, couvert e  parquinho, a experiência foi ótima.",Comida,0,3,571156
+277721,preço,justo,positivo,0.9878059534157188,"Comida maravilhosa, preço justo, estacionamento quase sempre tem vaga, não uso o serviço de manobrista prefiro estacionar sozinha, música ambiente,  parquinho seguro vc visualiza as câmeras pelo seu celular,  não cobram 10%, couvert e  parquinho, a experiência foi ótima.",preço,0,5,571156
+277722,parquinho,seguro,positivo,0.9571098647311118,"Comida maravilhosa, preço justo, estacionamento quase sempre tem vaga, não uso o serviço de manobrista prefiro estacionar sozinha, música ambiente,  parquinho seguro vc visualiza as câmeras pelo seu celular,  não cobram 10%, couvert e  parquinho, a experiência foi ótima.",parquinho,0,6,571156
+277723,música,ambiente,positivo,0.9694624150642734,"Comida maravilhosa, preço justo, estacionamento quase sempre tem vaga, não uso o serviço de manobrista prefiro estacionar sozinha, música ambiente,  parquinho seguro vc visualiza as câmeras pelo seu celular,  não cobram 10%, couvert e  parquinho, a experiência foi ótima.",música,0,6,571156
+277791,serviço,geral,positivo,0.9159880834160874,"Eu guero auxiliar de cozinha ,  ou auxiliar de serviço geral",serviço,0,2,571368
+277790,noite,boa,positivo,0.9500086894910632,"oi  boa   noite",noite,0,8,571374
+277788,dia,bom,positivo,0.963407814128473,"Bom dia está disponível auxiliar de cozinha",dia,0,3,571384
+277789,dia,bom,positivo,0.963407814128473,"Bom dia a vaga de auxiliar de limpeza da tá disponível ainda se tiver eu tenho interesse",dia,0,3,571385
+277792,saque,aniversário,positivo,0.8561808241098813,"Olá
+Me chamo Camila Moreira Trabalho com antecipação do FGTS Vc já conhece a modalidade do saque aniversário?",saque,0,8,571390
+277866,Ambiente,acolhedor,positivo,0.9893299952312828,"Ambiente acolhedor",Ambiente,0,6,571636
+277892,👏,bom,positivo,0.963407814128473,"👏👏bom demais",👏,0,8,571705
+277893,pizza,melhores,positivo,0.9302396840528394,"Gratidão gente muito boa ali as pizza melhores que eu posso aver comido",pizza,0,3,571917
+277894,Gratidão,boa,positivo,0.9500086894910632,"Gratidão gente muito boa ali as pizza melhores que eu posso aver comido",Gratidão,0,8,571917
+277971,Ambiente,agradável,positivo,0.9717875145405196,"Tudo muito saboroso
+Ambiente bem agradável.",Ambiente,0,6,572333
+277972,local,excelente,positivo,0.9919043535940204,"Ótimo atendimento, excelente local,  estacionamento grátis",local,0,7,572334
+277973,estacionamento,grátis,positivo,0.9298892988929888,"Ótimo atendimento, excelente local,  estacionamento grátis",estacionamento,0,8,572334
+278406,espaço,disponível,positivo,0.7718729747245625,"Tem espaço disponível!!",espaço,0,6,573927
+278400,ambiente,ideal,positivo,0.9839030334124288,"A estrutura é aconchegante, com um ambiente que combina bem com o charme da cidade, ideal para um jantar com a família ou um encontro descontraído com amigos.",ambiente,0,6,574091
+278401,pratos,saborosos,positivo,0.9829658605974396,"Fora isso, o restaurante também oferece pratos quentes saborosos, que complementam muito bem a refeição.",pratos,0,3,574091
+278402,noite,gostosa,positivo,0.9696347552784326,"A localização é um plus, bem situada, fácil de chegar e perfeita pra quem quer curtir uma noite gostosa em Olinda.",noite,0,8,574091
+278403,experiência,agradável,positivo,0.9717875145405196,"Se você busca uma experiência agradável, comida de qualidade e um ambiente acolhedor, o Atlântico é, sem dúvida, uma ótima escolha!",experiência,0,4,574091
+278404,ambiente,acolhedor,positivo,0.9893299952312828,"Se você busca uma experiência agradável, comida de qualidade e um ambiente acolhedor, o Atlântico é, sem dúvida, uma ótima escolha!",ambiente,0,6,574091
+278405,escolha,ótima,positivo,0.9863168364740988,"Se você busca uma experiência agradável, comida de qualidade e um ambiente acolhedor, o Atlântico é, sem dúvida, uma ótima escolha!",escolha,0,4,574091
+278407,pratos,quentes,positivo,0.9296327661867734,"Fora isso, o restaurante também oferece pratos quentes saborosos, que complementam muito bem a refeição.",pratos,0,3,574091
+278408,plus,fácil,positivo,0.9766991504247876,"A localização é um plus, bem situada, fácil de chegar e perfeita pra quem quer curtir uma noite gostosa em Olinda.",plus,0,8,574091
+278409,localização,ótima,positivo,0.9863168364740988,"Além disso, a pizzaria tem uma ótima localização, o que a torna ainda mais conveniente para quem está na região.",localização,0,7,574093
+278410,atmosfera,aconchegante,positivo,0.9893555149793738,"Sempre que vou, sou surpreendido pela qualidade das pizzas e pela atmosfera aconchegante do restaurante.",atmosfera,0,6,574093
+278411,qualidade,excelente,positivo,0.9919043535940204,"O cardápio é super variado, com opções para todos os gostos, e as pizzas são sempre fresquinhas, com ingredientes de excelente qualidade.",qualidade,0,5,574093
+278412,pizza,deliciosa,positivo,0.9944337556418726,"Sem dúvidas, a Pizzaria Atlântico Graças é uma das minhas favoritas, e sempre recomendo a todos que buscam uma pizza deliciosa e um ótimo ambiente para uma refeição descontraída e saborosa.",pizza,0,3,574093
+278413,lugar,maravilhoso,positivo,0.9917564567653908,"A Pizzaria Atlântico Graças é um lugar simplesmente maravilhoso!",lugar,0,7,574093
+278414,refeição,prazerosa,positivo,0.9518900343642612,"As bebidas sempre bem geladas complementam a experiência, tornando a refeição ainda mais prazerosa.",refeição,0,3,574093
+278415,bebidas,geladas,positivo,0.9309444708115804,"As bebidas sempre bem geladas complementam a experiência, tornando a refeição ainda mais prazerosa.",bebidas,0,4,574093
+278416,ambiente,ótimo,positivo,0.9884785196216967,"Sem dúvidas, a Pizzaria Atlântico Graças é uma das minhas favoritas, e sempre recomendo a todos que buscam uma pizza deliciosa e um ótimo ambiente para uma refeição descontraída e saborosa.",ambiente,0,6,574093
+278510,Pizzas,deliciosas,positivo,0.9960743615197184,"Pizzas deliciosas",Pizzas,0,3,574612
+279015,experiência,maravilhosa,positivo,0.9906806299262348,"Nossa quando eu chegar em recife vou procurar essa experiência maravilhosa 😍❤️",experiência,0,4,576021
+279013,acesso,fácil,positivo,0.9766991504247876,"A comida é excelente, os funcionários sempre atenciosos, a estrutura é linda e de fácil acesso.",acesso,0,6,576333
+279014,funcionários,atenciosos,positivo,0.9786146331587072,"A comida é excelente, os funcionários sempre atenciosos, a estrutura é linda e de fácil acesso.",funcionários,0,2,576333
+279016,relação,péssima,negativo,-0.923064085447263,"E o preço é nas alturas, caro mesmo, acho uma péssima relação custo-benefício.",relação,0,2,576334
+279017,pratos,maravilhosos,positivo,0.9930431325780164,"Tem gente que adora a comida daqui e acha os pratos maravilhosos, comigo é o oposto.",pratos,0,3,576334
+279018,frio,independente,positivo,0.8452830188679246,"Tudo frio, independente do horário.",frio,0,2,576334
+279019,relação,custo-benefício,positivo,0.9574065309985802,"E o preço é nas alturas, caro mesmo, acho uma péssima relação custo-benefício.",relação,0,2,576334
+279020,alturas,caro,positivo,0.7863223542244671,"E o preço é nas alturas, caro mesmo, acho uma péssima relação custo-benefício.",alturas,0,8,576334
+279021,fila,enorme,positivo,0.9052122278425336,"Aí você vai até a fila para pesar, demora bastante porque só fica 2 funcionários e uma fila enorme, a comida tava fria e agora fica gelada.",fila,0,3,576334
+279205,batatas,frias,positivo,0.5012919896640827,"O arroz veio errado...não foi o do cardápio,  de brócolis  e as batatas frias , sem crocancia.",batatas,0,3,577997
+279207,vez,segunda,positivo,0.7894989595005603,"Ja é a segunda vez que a carne vem crua.",vez,0,2,577998
+279206,pizza,excelente,positivo,0.9919043535940204,"Entrega rápida, pizza excelente, entregador educado e formal.",pizza,0,3,577999
+279208,Entrega,rápida,positivo,0.9633709721839714,"Entrega rápida, pizza excelente, entregador educado e formal.",Entrega,0,2,577999
+279209,pedidos,últimos,positivo,0.8013377926421404,"Nós últimos pedidos notamos que está diminuindo cada vez mais a quantidade.",pedidos,0,2,578004
+279211,golpe,mesmo,positivo,0.7844144882202527,"Por sorte, nosso porteiro é experiente, e já haviam tentado dar o mesmo golpe em outro morador do nosso prédio.",golpe,0,8,578252
+279212,frango,delicioso,positivo,0.9937293729372936,"Delicioso frango à cubana.",frango,0,3,578253
+279210,mesmo,boa,positivo,0.9500086894910632,"Muito boa mesmo de verdade",mesmo,0,8,579044
+279363,Comida,boa,positivo,0.9500086894910632,"Comida boa, atendimento mais ou menos, demora muito... o pior de tudo que a cerveja vem sempre quente.",Comida,0,3,579524
+279364,Decepção,total,positivo,0.5498240563019834,"Decepção total, deixei de ir pro coco bambu pra almoçar la.",Decepção,0,4,579526
+279365,roupa,simples,positivo,0.9017521810928116,"Não falei nada, só perderam uma cliente 😔
+Eu estava com roupa simples e posso ter sido julgada por isso, mais acredito que fui cobrada e paguei igual a todos!",roupa,0,8,579526
+279366,paguei,igual,positivo,0.9325987020010816,"Não falei nada, só perderam uma cliente 😔
+Eu estava com roupa simples e posso ter sido julgada por isso, mais acredito que fui cobrada e paguei igual a todos!",paguei,0,2,579526
+279367,atendimento,impecável,positivo,0.9919202716297788,"A pizza é maravilhosa, e o atendimento, impecável.",atendimento,0,2,579529
+279450,coisas,básicas,positivo,0.7050359712230215,"Pedir para mandar sal, Guardanapo, palitos de dente.... coisas básicas e nada foi atendido.",coisas,0,2,579702
+279452,valor,excessivo,positivo,0.7569230769230769,"Quantidade pouca para um valor excessivo!",valor,0,5,579702
+279443,👏,melhor,positivo,0.9327033074064036,"O melhor👏👏👏",👏,0,8,580236
+279444,Atendimento,excelente,positivo,0.9919043535940204,"Atendimento excelente e a comida muito boa.",Atendimento,0,2,580428
+279446,comida,boa,positivo,0.9500086894910632,"Atendimento excelente e a comida muito boa.",comida,0,3,580428
+279445,vaguinha,ótima,positivo,0.9863168364740988,"Fui muito bem recebida por um manobrista chamado Alexsandro, pegou meu carro e colocou numa vaguinha ótima.",vaguinha,0,8,580429
+279447,super,quente,positivo,0.8406342913776016,"A comida estava deliciosa e super quente.",super,0,2,580429
+279448,papelzinho,menor,positivo,0.7461994809047089,"Vi que tiraram aquele papel nos davam pra registrar o carro, me deram um papelzinho menor, muito mais bonito que aquele papel rabiscado feio.",papelzinho,0,8,580429
+279449,rede,social,positivo,0.8141762452107281,"Não sou muito de comentar em rede social, mas fazia tempo que não ia na Atlantico.",rede,0,4,580429
+279451,papelzinho,bonito,positivo,0.9102855784576726,"Vi que tiraram aquele papel nos davam pra registrar o carro, me deram um papelzinho menor, muito mais bonito que aquele papel rabiscado feio.",papelzinho,0,8,580429
+279525,noite,boa,positivo,0.9500086894910632,"Boa noite!",noite,0,8,580529
+279526,filet,parmegiana,positivo,0.8939643552493635,"Hoje comi um filet parmegiana de carne na Pizzaria Atlântico do Shopping Plaza.",filet,0,3,580529
+279523,ponto,negativo,positivo,0.9380217267009721,"Eu fui uma em Jardim atlântico, levei minha neta de 2 anos o ponto negativo não tinha ninguém olhando, fui ver minha neta tinha meninos de 13 anos uns 5 jogando aquelas bolinhas das piscina de bolinhas eles tava jogando bolinhas um no outro uma bolinha bateu na minha neta e ela começou a chorar fiquei muito chateada e triste",ponto,0,7,580534
+279528,Jardim,atlântico,positivo,0.9361702127659576,"Eu fui uma em Jardim atlântico, levei minha neta de 2 anos o ponto negativo não tinha ninguém olhando, fui ver minha neta tinha meninos de 13 anos uns 5 jogando aquelas bolinhas das piscina de bolinhas eles tava jogando bolinhas um no outro uma bolinha bateu na minha neta e ela começou a chorar fiquei muito chateada e triste",Jardim,0,8,580534
+279520,jardim,atlântico,positivo,0.9361702127659576,"@giselletriter18  fica em jardim atlântico",jardim,0,8,580537
+279517,experiência,excelente,positivo,0.9919043535940204,"Fui até a pizzaria e tive uma experiência excelente.",experiência,0,4,580759
+279518,experiência,positiva,positivo,0.8702667105696411,"Atendimento rápido, educado e atencioso, contribuindo muito para a experiência positiva.",experiência,0,4,580759
+279519,criações,especiais,positivo,0.976121813357942,"O cardápio oferece boas opções, desde sabores tradicionais até criações especiais.",criações,0,4,580759
+279521,frescos,ingredientes,positivo,0.9099775387161604,"As pizzas são saborosas, massa leve e recheio farto, com ingredientes frescos e de qualidade.",frescos,0,3,580759
+279522,opções,boas,positivo,0.9539205982623996,"O cardápio oferece boas opções, desde sabores tradicionais até criações especiais.",opções,0,3,580759
+279524,sabores,tradicionais,positivo,0.9684980109665629,"O cardápio oferece boas opções, desde sabores tradicionais até criações especiais.",sabores,0,4,580759
+279527,Atendimento,rápido,positivo,0.9724956928378046,"Atendimento rápido, educado e atencioso, contribuindo muito para a experiência positiva.",Atendimento,0,2,580759
+279613,experiência,péssima,negativo,-0.923064085447263,"Péssima experiência",experiência,0,4,580814
+279612,pão,igual,positivo,0.9325987020010816,"O pedido embarcou e a pizza chegou igual um pão",pão,0,3,580816
+279609,coca,cola,positivo,0.9113890367216604,"A coca cola veio quente.",coca,0,4,582011
+279610,andar,primeiro,positivo,0.7211174242424242,"Usamos muito para almoço rápido no primeiro andar.",andar,0,7,582058
+279611,almoço,rápido,positivo,0.9724956928378046,"Usamos muito para almoço rápido no primeiro andar.",almoço,0,3,582058
+279709,Refeição,boa,positivo,0.9500086894910632,"Refeição muito boa, simples mas muito bom",Refeição,0,3,582114
+279712,pedaço,razoável,positivo,0.8648198391165691,"O file de carne que veio no pedido foi extremamente pequeno pra uma pessoa, um valor de 52,00 era vir um pedaço razoável, como geralmente a loja entrega.",pedaço,0,3,582116
+279714,loja,entrega,positivo,0.7104221635883905,"O file de carne que veio no pedido foi extremamente pequeno pra uma pessoa, um valor de 52,00 era vir um pedaço razoável, como geralmente a loja entrega.",loja,0,1,582116
+279710,Pizza,excelente,positivo,0.9919043535940204,"Pizza excelente.",Pizza,0,3,582117
+279711,massa,fina,positivo,0.8677462887989204,"A da concorrência vem com a massa fina parecendo papel e vem sem ketchup.",massa,0,3,582117
+279708,Pizza,fria,negativo,-0.6434706653079051,"Pizza fria",Pizza,0,3,582118
+279700,Gosto,ruim,negativo,-0.6731793159462143,"Gosto ruim.",Gosto,0,3,582364
+279699,Preço,absurdo,negativo,-0.6131787675411837,"Preço absurdo",Preço,0,5,582366
+279704,dia,bom,positivo,0.963407814128473,"Bom dia  onde fica",dia,0,3,582392
+279702,Ta,disponível,positivo,0.7718729747245625,"Ta disponível",Ta,0,2,582393
+279701,preço,justo,positivo,0.9878059534157188,"excelentes profissionais , ótimo e preço justo.",preço,0,5,582419
+279703,profissionais,ótimo,positivo,0.9884785196216967,"excelentes profissionais , ótimo e preço justo.",profissionais,0,2,582419
+279705,profissionais,excelentes,positivo,0.9879496239920268,"excelentes profissionais , ótimo e preço justo.",profissionais,0,2,582419
+279706,comida,boa,positivo,0.9500086894910632,"Atendimento excelente e a comida muito boa.",comida,0,3,582422
+279707,ambiente,tranquilo,positivo,0.9794048897593024,"O ambiente bem tranquilo.",ambiente,0,6,582422
+279713,Atendimento,excelente,positivo,0.9919043535940204,"Atendimento excelente e a comida muito boa.",Atendimento,0,2,582422
+279759,atendimento,bom,positivo,0.963407814128473,"Comida boa, parquinho, bom atendimento e preço justo.",atendimento,0,2,582716
+279761,Comida,boa,positivo,0.9500086894910632,"Comida boa, parquinho, bom atendimento e preço justo.",Comida,0,3,582716
+279762,preço,justo,positivo,0.9878059534157188,"Comida boa, parquinho, bom atendimento e preço justo.",preço,0,5,582716
+279760,experiência,recente,positivo,0.8732514987153868,""Olá, gostaria de compartilhar minha experiência recente no seu restaurante.",experiência,0,4,582717
+279839,Pizza,simples,positivo,0.9017521810928116,"Pizza simples demais",Pizza,0,3,582789
+280015,sabor,excelente,positivo,0.9919043535940204,"Excelente sabor",sabor,0,3,583600
+280017,ponto,certo,positivo,0.8950131233595799,"Comida saborosa e o frango no  ponto certo.",ponto,0,7,583841
+280020,Comida,saborosa,positivo,0.9790597031131242,"Comida saborosa e o frango no  ponto certo.",Comida,0,3,583841
+280019,filé,seco,positivo,0.5672187567218757,"Macarrão com pouco molho, fora do padrão que estou acostumada, até porquê sempre peço na Atlântico,filé seco com pouco queijo e pouco molho.",filé,0,3,583844
+280016,atendimento,excepcional,positivo,0.9673913043478259,"Variedade de pratos e atendimento excepcional.",atendimento,0,2,583851
+280018,comida,excelente,positivo,0.9919043535940204,"Ambiente acolhedor, organizado e, o mais importante, com comida excelente!",comida,0,3,583851
+280021,Ambiente,acolhedor,positivo,0.9893299952312828,"Ambiente acolhedor, organizado e, o mais importante, com comida excelente!",Ambiente,0,6,583851
+280076,recheio,bom,positivo,0.963407814128473,"A massa é leve e o recheio muito bom!",recheio,0,4,584137
+280273,serviço,bom,positivo,0.963407814128473,"Bom serviço",serviço,0,2,584208
+280274,experiência,boa,positivo,0.9500086894910632,"Não tive uma boa experiência.",experiência,0,4,584438
+280275,Som,alto,positivo,0.8636430353735506,"Som muito alto, tanto dentro, quanto fora do restaurante,  que mantinha a porta aberta.",Som,0,2,584438
+280276,porta,aberta,positivo,0.8910353154240871,"Som muito alto, tanto dentro, quanto fora do restaurante,  que mantinha a porta aberta.",porta,0,2,584438
+280277,Acústica,horrível,negativo,-0.9259803921568628,"Acústica horrível.",Acústica,0,8,584438
+280278,volume,alto,positivo,0.8636430353735506,"Pessoas falando em alto volume.",volume,0,8,584438
+280369,combinação,perfeita,positivo,0.9894713872674704,"Que combinação perfeita: pizza quentinha, diversão pra criançada e uma Água Da Fonte fresquinha pra manter todo mundo hidratado!",combinação,0,3,584515
+280372,toque,maior,positivo,0.8554893365512486,"Só falta um toque maior do molho de tomate.",toque,0,3,584673
+280370,super,indico,positivo,0.9252396623265132,"Pizza super macia, bem recheada, borda de catupiry deliciosa, super indico ❤️😍",super,0,2,584716
+280371,catupiry,deliciosa,positivo,0.9944337556418726,"Pizza super macia, bem recheada, borda de catupiry deliciosa, super indico ❤️😍",catupiry,0,3,584716
+280435,atendimento,ótimo,positivo,0.9884785196216967,"Comida de qualidade, ambiente agradável e um ótimo atendimento",atendimento,0,2,584977
+280436,ambiente,agradável,positivo,0.9717875145405196,"Comida de qualidade, ambiente agradável e um ótimo atendimento",ambiente,0,6,584977
+280437,ambiente,barulhento,positivo,0.7816291161178509,"Só acho o ambiente bem barulhento a depender do horário, não dá nem pra conversar direito nem ouvir o pianista tocando.",ambiente,0,6,584978
+280438,lembranças,boa,positivo,0.9500086894910632,"Gosto das pizzas, tenho lembranças boa da infância nesse local.",lembranças,0,8,584978
+280493,delícia,melhor,positivo,0.9327033074064036,"A melhor delícia de abacaxi do mundo!",delícia,0,3,585282
+280492,aspecto,horrível,negativo,-0.9259803921568628,"A batata frita veio muito mole com aspecto horrível.",aspecto,0,2,585308
+280494,bananas,fritas,positivo,0.8467799856356236,"O frango e as bananas muito fritas.",bananas,0,8,585308
+280532,peças,pequenas,positivo,0.8210385131251198,"120,00 em duas pequenas peças de carne.",peças,0,2,585346
+280533,Pizza,gostosa,positivo,0.9696347552784326,"Pizza gostosa",Pizza,0,3,585352
+280534,Local,bom,positivo,0.963407814128473,"Local bom, comida boa e serviço maravilhoso, local perfeito para ir comemorar um aniversário, comidas deliciosas e com várias opções",Local,0,7,585609
+280535,local,perfeito,positivo,0.9923449106149058,"Local bom, comida boa e serviço maravilhoso, local perfeito para ir comemorar um aniversário, comidas deliciosas e com várias opções",local,0,7,585609
+280536,serviço,maravilhoso,positivo,0.9917564567653908,"Local bom, comida boa e serviço maravilhoso, local perfeito para ir comemorar um aniversário, comidas deliciosas e com várias opções",serviço,0,2,585609
+280537,comida,boa,positivo,0.9500086894910632,"Local bom, comida boa e serviço maravilhoso, local perfeito para ir comemorar um aniversário, comidas deliciosas e com várias opções",comida,0,3,585609
+280538,Local,bom,positivo,0.963407814128473,"Local bom, como tenho filho, o parque é legal e a pizzaria bem localizada.",Local,0,7,585610
+280610,Pouquíssima,calabresa,positivo,0.8383808095952024,"Pouquíssima calabresa, mas estava uma delícia",Pouquíssima,0,8,585711
+280613,pizza,melhor,positivo,0.9327033074064036,"Melhor pizza do Recife 🫶",pizza,0,3,585869
+280611,parque,infantil,positivo,0.91027496382055,"Atendimento ruim, parque infantil mal cuidado e comida não merece o preço qu tem",parque,0,6,585898
+280612,Atendimento,ruim,negativo,-0.6731793159462143,"Atendimento ruim, parque infantil mal cuidado e comida não merece o preço qu tem",Atendimento,0,2,585898
+280882,lazanha,normal,positivo,0.7945226438188494,"Veio metade do tamanho de uma lazanha normal.",lazanha,0,8,586756
+280883,pedido,último,positivo,0.7850150602409639,"Meu último pedido foi uma lazanha.",pedido,0,2,586756
+280881,huuuuuu,saboroso,positivo,0.975690705269662,"Muito saboroso huuuuuu",huuuuuu,0,8,586782
+280880,Comida,gostosa,positivo,0.9696347552784326,"Comida gostosa",Comida,0,3,587024
+280931,Obrigada,atlântico,positivo,0.9361702127659576,"Obrigada, atlântico!!",Obrigada,0,2,587084
+280930,👏,excelente,positivo,0.9919043535940204,"Excelente 👏",👏,0,8,587106
+280958,Comida,saborosa,positivo,0.9790597031131242,"Comida saborosa, diz que é pra 2 pessoas, mas dependendo das pessoas comem mais.",Comida,0,3,587333
+280959,massa,crua,negativo,-0.6808780075981427,"Pizza de frango com a massa crua ainda",massa,0,3,587586
+280960,comida,boa,positivo,0.9500086894910632,"Tem playground, comida boa, de segunda a sexta tem promoções.",comida,0,3,587606
+280961,variedade,grande,positivo,0.9313906357307334,"Restaurante e pizzaria com grande variedade de comidas e bebidas, bom atendimento, ambiente limpo e amplo.",variedade,0,3,587606
+280962,atendimento,bom,positivo,0.963407814128473,"Restaurante e pizzaria com grande variedade de comidas e bebidas, bom atendimento, ambiente limpo e amplo.",atendimento,0,2,587606
+280963,ambiente,limpo,positivo,0.9679338228459894,"Restaurante e pizzaria com grande variedade de comidas e bebidas, bom atendimento, ambiente limpo e amplo.",ambiente,0,6,587606
+280964,pizzas,saborosas,positivo,0.9824085554866708,"Ambiente super agradável , o atendimento é excelente, pizzas saborosas e os preços são ótimos!",pizzas,0,3,587607
+280965,Ambiente,agradável,positivo,0.9717875145405196,"Ambiente super agradável , o atendimento é excelente, pizzas saborosas e os preços são ótimos!",Ambiente,0,6,587607
+281032,Decepção,completa,positivo,0.7235258724428401,"Decepção completa!!!",Decepção,0,4,587675
+281123,quantidade,boa,positivo,0.9500086894910632,"Uma boa quantidade de carne, o único problema foi a quantidade de macarrão que foi pouca",quantidade,0,3,588033
+281126,problema,único,positivo,0.9258363139070059,"Uma boa quantidade de carne, o único problema foi a quantidade de macarrão que foi pouca",problema,0,2,588033
+281124,comida,boa,positivo,0.9500086894910632,"Boa comida.",comida,0,3,588221
+281125,atendimento,bom,positivo,0.963407814128473,"Bom atendimento.",atendimento,0,2,588221
+281183,mt,grande,positivo,0.9313906357307334,"Pizza chegou no tempo estima, porém a pizza veio com pouquíssimo recheio, pedaços de frango e bacon mt grande e ponto do cozimento da massa deixou a desejar (pouco assada).",mt,0,6,588546
+281275,criança,pequena,positivo,0.8309859154929577,"Gente, venho aqui como cliente frequente da Pizzaria Atlântico e, principalmente, como pai/mãe de uma criança pequena que adora o parquinho.",criança,0,8,588942
+281276,espaço,infantil,positivo,0.91027496382055,"Quero pedir um pouco mais de consciência dos pais de pré-adolescentes que têm deixado seus filhos maiores usarem o espaço infantil.",espaço,0,6,588942
+281277,limitação,clara,positivo,0.6731748726655348,"O parque tem uma limitação clara de altura (1,20m) por questão de segurança — não é birra, é regra validada pelo INMETRO e Corpo de Bombeiros.",limitação,0,8,588942
+281278,criança,pequena,positivo,0.8309859154929577,"Lugar de criança pequena é no brinquedo seguro — lugar de criança maior é na mesa, jogando conversa fora com a gente.",criança,0,8,588942
+281279,criança,maior,positivo,0.8554893365512486,"Lugar de criança pequena é no brinquedo seguro — lugar de criança maior é na mesa, jogando conversa fora com a gente.",criança,0,8,588942
+281280,cliente,frequente,positivo,0.8100508525276697,"Gente, venho aqui como cliente frequente da Pizzaria Atlântico e, principalmente, como pai/mãe de uma criança pequena que adora o parquinho.",cliente,0,8,588942
+281281,crianças,grandes,positivo,0.9327377824487652,"Ver crianças grandes correndo, empurrando e usando brinquedos feitos para os pequenos é frustrante.",crianças,0,3,588942
+281282,filhos,maiores,positivo,0.8877381938690969,"Quero pedir um pouco mais de consciência dos pais de pré-adolescentes que têm deixado seus filhos maiores usarem o espaço infantil.",filhos,0,8,588942
+281283,brinquedo,seguro,positivo,0.9571098647311118,"Lugar de criança pequena é no brinquedo seguro — lugar de criança maior é na mesa, jogando conversa fora com a gente.",brinquedo,0,8,588942
+281383,comida,mesma,positivo,0.7114020731042008,"A mesma comida é bem cervida no restaurante e na entrega vem pouco.",comida,0,3,589008
+281384,atenção,melhor,positivo,0.9327033074064036,"Faltou melhor atenção na prestação de serviço por esta cheio.",atenção,0,2,589204
+281441,aparência,boa,positivo,0.9500086894910632,"Boa aparência",aparência,0,2,589244
+281446,Comida,saborosa,positivo,0.9790597031131242,"Comida saborosa",Comida,0,3,589245
+281439,Pizza,deliciosa,positivo,0.9944337556418726,"Pizza deliciosa!",Pizza,0,3,589281
+281444,prato,mesmo,positivo,0.7844144882202527,"Sempre peço o mesmo prato, dessa vez veio assim.",prato,0,3,589291
+281442,Suco,quente,positivo,0.8406342913776016,"Suco quente e não mandaram ketchup",Suco,0,3,589292
+281448,pizzaria,atlântico,positivo,0.9361702127659576,"Sou cliente da pizzaria atlântico desde o início, tenho notado uma diferença no gosto do queijo mussarela, houve mudança de fornecedor?",pizzaria,0,1,589336
+281440,gosto,banana,positivo,0.9261923109855296,"Pizza sem gosto banana ver se queijo ourives.",gosto,0,3,589519
+281443,Atendimento,excelente,positivo,0.9919043535940204,"Atendimento excelente e o espaço é aconchegante.",Atendimento,0,2,589535
+281445,ponto,único,positivo,0.9258363139070059,"O único ponto negativo é a falta de estacionamento.",ponto,0,7,589535
+281447,ponto,negativo,positivo,0.9380217267009721,"O único ponto negativo é a falta de estacionamento.",ponto,0,7,589535
+281509,sabor,legal,positivo,0.9292467821388845,"Macaxeira não estava com um sabor legal.",sabor,0,3,589641
+281508,Batata,murcha,negativo,-0.7556179775280899,"Batata murcha e mole!",Batata,0,3,589644
+281510,empanados,escuro,positivo,0.7370609981515711,"Os empanados muito escuro o que pode conotar óleo venho!",empanados,0,3,589644
+281512,banana,passada,positivo,0.6447227191413238,"O empanado de banana passada!",banana,0,3,589644
+281505,forma,mesma,positivo,0.7114020731042008,"Espero que continue da mesma forma.",forma,0,4,589937
+281506,atendimento,excelente,positivo,0.9919043535940204,"Uma ótima pizzaria com excelente atendimento ao cliente.",atendimento,0,2,589937
+281507,pizzaria,ótima,positivo,0.9863168364740988,"Uma ótima pizzaria com excelente atendimento ao cliente.",pizzaria,0,1,589937
+281511,restaurantes,melhores,positivo,0.9302396840528394,"Um dos melhores restaurantes de Recife.",restaurantes,0,3,589939
+281654,espaço,kids,positivo,0.9295942720763724,"Minha filha aproveitou bastante o espaço kids.",espaço,0,6,590356
+281655,experiência,boa,positivo,0.9500086894910632,"Tive uns experiência muito boa.",experiência,0,4,590356
+281686,massa,fina,positivo,0.8677462887989204,"Gostaria da massa mais fina, veio mais massa que recheio",massa,0,3,590412
+281684,sabores,diferentes,positivo,0.9336257867633034,"Pedi duas pizzas de sabores diferentes, uma com borda catupiry e outra sem.",sabores,0,4,590488
+281685,pizza,saborosa,positivo,0.9790597031131242,"A pizza mais saborosa que há!",pizza,0,3,590490
+281681,Comida,boa,positivo,0.9500086894910632,"Comida muito boa, funcionários atenciosos mas o local é muito barulhento.",Comida,0,3,590498
+281683,funcionários,atenciosos,positivo,0.9786146331587072,"Comida muito boa, funcionários atenciosos mas o local é muito barulhento.",funcionários,0,2,590498
+281682,Great,pizza,positivo,0.8910973146168021,"Great pizza",Great,0,8,590499
+281702,Pizza,maravilhosa,positivo,0.9906806299262348,"Pizza maravilhosa!",Pizza,0,3,590527
+281743,comida,nova,positivo,0.8022339370530821,"Comida velha, deveriam ter mais respeito com o cliente e venderem comida nova.",comida,0,3,590682
+281745,Comida,velha,positivo,0.5890625,"Comida velha, deveriam ter mais respeito com o cliente e venderem comida nova.",Comida,0,3,590682
+281748,frio,cheio,positivo,0.8755543375355025,"Frango empanado não estava torrado no ponto veio frio cheio de óleo.",frio,0,2,590682
+281747,quantidade,excessiva,positivo,0.5796915167095116,"O arroz veio com com uma quantidade excessiva de cenoura",quantidade,0,3,590683
+281744,tamanho,justo,positivo,0.9878059534157188,"propaganda enganosa a respeito do tamanho da pizza, esperava um tamanho justo ao valor que foi cobrado.",tamanho,0,2,590684
+281746,propaganda,enganosa,negativo,-0.9115646258503401,"propaganda enganosa a respeito do tamanho da pizza, esperava um tamanho justo ao valor que foi cobrado.",propaganda,0,8,590684
+281749,preço,bom,positivo,0.963407814128473,"Ótimo para crianças, pizzaria atlantico entrega bem o "custo beneficio", bom preço e qualidade.",preço,0,5,590830
+281750,pizzaria,atlantico,positivo,0.8958333333333334,"Ótimo para crianças, pizzaria atlantico entrega bem o "custo beneficio", bom preço e qualidade.",pizzaria,0,1,590830
+281766,comida,fria,negativo,-0.6434706653079051,"Depois de pedir uma picanha Atlântico, passamos 3 horas esperando, quando chegou a comida fria, e pedimos pra esquentar veio uma carne a menos",comida,0,3,591021
+281767,comida,perfeita,positivo,0.9894713872674704,"A comida perfeita!!",comida,0,3,591022
+281840,tomate,incrível,positivo,0.9766774641369736,"Tem uma porção de tomate seco incrível no sabor!",tomate,0,3,591222
+281841,tomate,seco,positivo,0.5672187567218757,"Tem uma porção de tomate seco incrível no sabor!",tomate,0,3,591222
+281842,pizza,saborosa,positivo,0.9790597031131242,"" Uma pizza saborosa!",pizza,0,3,591222
+281877,rodada,primeira,positivo,0.8894017599308761,"O atendimento foi péssimo, entregaram a pizza na mesa errada, se não tivesse reclamado nunca perceberiam o erro, além de que após a pizza também entregaram a primeira rodada de bebidas em outra mesa e a segunda rodada esqueceram de trazer.",rodada,0,8,591306
+281878,mesa,errada,negativo,-0.7192192192192193,"O atendimento foi péssimo, entregaram a pizza na mesa errada, se não tivesse reclamado nunca perceberiam o erro, além de que após a pizza também entregaram a primeira rodada de bebidas em outra mesa e a segunda rodada esqueceram de trazer.",mesa,0,2,591306
+281879,rodada,segunda,positivo,0.7894989595005603,"O atendimento foi péssimo, entregaram a pizza na mesa errada, se não tivesse reclamado nunca perceberiam o erro, além de que após a pizza também entregaram a primeira rodada de bebidas em outra mesa e a segunda rodada esqueceram de trazer.",rodada,0,8,591306
+281924,ambiente,confortável,positivo,0.9562645098479744,"Comida boa, ambiente confortável mas, não tem comida vegana ou vegetariana!",ambiente,0,6,591488
+281925,comida,vegana,positivo,0.9443708609271524,"Comida boa, ambiente confortável mas, não tem comida vegana ou vegetariana!",comida,0,3,591488
+281926,Comida,boa,positivo,0.9500086894910632,"Comida boa, ambiente confortável mas, não tem comida vegana ou vegetariana!",Comida,0,3,591488
+281955,prova,viva,positivo,0.8763557483731019,"Meu pai é a prova viva de que Deus é Deus de milagres e tem dado vida ao meu pai... Obrigado Deus 🙌🙌🙌🙌",prova,0,8,591515
+281971,coisas,grandes,positivo,0.9327377824487652,"Grandes coisas fez o Senhor e mais ele fará 🙏🏼, @prisciilav te amo Mana 👏🏽🫶🏽",coisas,0,2,591601
+281972,área,kids,positivo,0.9295942720763724,"Como cliente frequente há bastante tempo e hoje como mãe de uma criança pequena percebo a necessidade de investirem no conforto da área de recreação, numa cidade quente como a nossa uma área kids sem ser climatizada é penoso e desconexo com a imagem da empresa.",área,0,1,591648
+281973,cidade,quente,positivo,0.8406342913776016,"Como cliente frequente há bastante tempo e hoje como mãe de uma criança pequena percebo a necessidade de investirem no conforto da área de recreação, numa cidade quente como a nossa uma área kids sem ser climatizada é penoso e desconexo com a imagem da empresa.",cidade,0,1,591648
+281974,criança,pequena,positivo,0.8309859154929577,"Como cliente frequente há bastante tempo e hoje como mãe de uma criança pequena percebo a necessidade de investirem no conforto da área de recreação, numa cidade quente como a nossa uma área kids sem ser climatizada é penoso e desconexo com a imagem da empresa.",criança,0,8,591648
+281975,cliente,frequente,positivo,0.8100508525276697,"Como cliente frequente há bastante tempo e hoje como mãe de uma criança pequena percebo a necessidade de investirem no conforto da área de recreação, numa cidade quente como a nossa uma área kids sem ser climatizada é penoso e desconexo com a imagem da empresa.",cliente,0,8,591648

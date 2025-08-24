@@ -45,6 +45,42 @@ def create_comentario(comentario: schemas.ComentarioCreate, db: Session = Depend
 def read_comentarios(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     return crud.get_comentarios(db, skip=skip, limit=limit)
 
+# >>> ROTA CORRIGIDA: comentários de um restaurante com 'autor' plano (compatível com MySQL/MariaDB)
+@app.get("/comentarios/restaurante/{restaurante_id}", response_model=List[schemas.ComentarioOut])
+def read_comentarios_por_restaurante(restaurante_id: int, db: Session = Depends(get_db)):
+    rows = (
+        db.query(
+            models.Comentario,
+            models.Cliente.nome.label("autor")
+        )
+        # outerjoin para não quebrar se o cliente tiver sido removido
+        .outerjoin(models.Cliente, models.Cliente.id == models.Comentario.cliente_id)
+        .filter(models.Comentario.restaurante_id == restaurante_id)
+        # MariaDB/MySQL não suporta "NULLS LAST":
+        # 1º ordena por "é nulo?" (False=0, True=1) => nulos por último
+        # 2º dentro dos não-nulos, ordena por data desc
+        .order_by(
+            models.Comentario.data_publicacao.is_(None).asc(),
+            models.Comentario.data_publicacao.desc()
+        )
+        .all()
+    )
+
+    return [
+        schemas.ComentarioOut(
+            id=c.id,
+            data_publicacao=c.data_publicacao,
+            curtidas=c.curtidas or 0,
+            texto=c.texto,
+            titulo=c.titulo,
+            url=c.url,
+            restaurante_id=c.restaurante_id,
+            cliente_id=c.cliente_id,
+            autor=(autor or "Desconhecido")
+        )
+        for (c, autor) in rows
+    ]
+
 # ----- Categorias de Opinião -----
 @app.post("/categorias-opiniao/", response_model=schemas.CategoriaOpiniao)
 def create_categoria_opiniao(cat: schemas.CategoriaOpiniaoCreate, db: Session = Depends(get_db)):

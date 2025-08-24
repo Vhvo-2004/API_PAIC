@@ -50,6 +50,21 @@ class Comentario(ComentarioBase):
     class Config:
         orm_mode = True
 
+# >>> Opção A: payload de saída com o autor plano <<<
+class ComentarioOut(BaseModel):
+    id: int
+    data_publicacao: Optional[datetime] = None
+    curtidas: int
+    texto: str
+    titulo: Optional[str] = None
+    url: Optional[str] = None
+    restaurante_id: int
+    cliente_id: int
+    autor: Optional[str] = None
+
+    class Config:
+        orm_mode = True
+
 
 # ---- Categoria de Opinião ----
 class CategoriaOpiniaoBase(BaseModel):
@@ -85,5 +100,5 @@ class Opiniao(OpiniaoBase):
 # ---- Comparação (mantido para compatibilidade com sua UI) ----
 class AspectoComparado(BaseModel):
     aspecto: str
-    notaPredita1: Decimal  # aqui usaremos média de 'polaridade' do restaurante 1
-    notaPredita2: Decimal  # média de 'polaridade' do restaurante 2
+    notaPredita1: Decimal
+    notaPredita2: Decimal

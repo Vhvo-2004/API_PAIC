@@ -1,0 +1,18 @@
+IDCategoria,nomeCategoria,descricao,ordem
+1,Geral,"Sobre o estabelecimento.",1
+2,Comida,,2
+3,Bebida,,3
+4,Serviço,,4
+5,Preço,,5
+6,Ambiente,,6
+7,Localização,,7
+8,Outros,,9
+9,Delivery,,8
+10,Produto,"Opiniões sobre a qualidade, utilidade ou variedade de produtos.",0
+11,Entrega,"Opiniões sobre problemas com envio, atrasos ou rastreio.",0
+12,Atendimento,"Críticas ou elogios ao atendimento e canais de suporte.",0
+13,Revenda,"Opiniões de consultores sobre a relação com a empresa ou dificuldades na revenda.",0
+14,Marca,"Opiniões sobre ações publicitárias, posicionamento ou reputação da empresa.",0
+15,Estorno,"Opiniões sobre problemas com devoluções ou estornos.",0
+16,Design,"Opiniões sobre beleza ou estilo dos produtos.",0
+17,Campanha,"Opiniões sobre promoções ou campanhas da marca.",0
