@@ -102,3 +102,27 @@ class AspectoComparado(BaseModel):
     aspecto: str
     notaPredita1: Decimal
     notaPredita2: Decimal
+    
+from pydantic import BaseModel
+from typing import Optional
+from datetime import datetime
+
+class ChartPolaridadeAspecto(BaseModel):
+    restaurante_id: int
+    aspecto: str
+    avg_polaridade: float
+    qt_opinioes: int
+    updated_at: datetime
+    class Config:
+        from_attributes = True
+
+class ChartGeneroAspecto(BaseModel):
+    restaurante_id: int
+    categoria_id: int
+    masc_count: int
+    fem_count: int
+    outros_count: int
+    total: int
+    updated_at: datetime
+    class Config:
+        from_attributes = True

@@ -8,7 +8,7 @@ from database import SessionLocal, engine
 # Cria as tabelas conforme os models novos
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="API - Sumarização de Avaliações de Restaurantes (Nova Estrutura)")
+app = FastAPI(title="API - Sumarização de Avaliações de Restaurantes")
 
 # Dependency
 def get_db():
@@ -103,3 +103,13 @@ def read_opinioes(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
 @app.get("/comparar_aspectos", response_model=List[schemas.AspectoComparado])
 def comparar_aspectos(restaurante1_id: int, restaurante2_id: int, db: Session = Depends(get_db)):
     return crud.comparar_aspectos(db, restaurante1_id, restaurante2_id)
+    
+from fastapi import Query
+# ----- Charts: leituras -----
+@app.get("/charts/polaridade/{restaurante_id}", response_model=List[schemas.ChartPolaridadeAspecto])
+def chart_polaridade(restaurante_id: int, aspecto: str | None = Query(None), db: Session = Depends(get_db)):
+    return crud.get_chart_polaridade(db, restaurante_id, aspecto)
+
+@app.get("/charts/genero/{restaurante_id}", response_model=List[schemas.ChartGeneroAspecto])
+def chart_genero(restaurante_id: int, categoria_id: int | None = Query(None), db: Session = Depends(get_db)):
+    return crud.get_chart_genero(db, restaurante_id, categoria_id)

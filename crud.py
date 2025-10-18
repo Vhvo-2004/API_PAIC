@@ -53,40 +53,64 @@ def create_opiniao(db: Session, opiniao: schemas.OpiniaoCreate):
 def get_opinioes(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Opiniao).offset(skip).limit(limit).all()
 
+def comparar_aspectos(db: Session, restaurante1_id: int, restaurante2_id: int):
+    # Média de polaridade por CATEGORIA para cada restaurante (subquery)
+    sub = (
+        db.query(
+            models.CategoriaOpiniao.categoria.label("categoria"),
+            models.Comentario.restaurante_id.label("rest_id"),
+            func.avg(models.Opiniao.polaridade).label("media"),
+        )
+        .join(models.Opiniao, models.Opiniao.categoria_id == models.CategoriaOpiniao.id)
+        .join(models.Comentario, models.Comentario.id == models.Opiniao.comentario_id)
+        .filter(models.Comentario.restaurante_id.in_([restaurante1_id, restaurante2_id]))
+        .group_by(models.CategoriaOpiniao.categoria, models.Comentario.restaurante_id)
+        .subquery()
+    )
 
-def comparar_aspectos(db, restaurante1_id: int, restaurante2_id: int):
-    """
-    Calcula a média de polaridade por 'aspecto' para dois restaurantes
-    em uma única query usando agregação condicional (CASE).
-    Inclui aspectos presentes em pelo menos um dos dois restaurantes.
-    """
+    # Pivot: 1 linha por categoria, colunas m1/m2
     rows = (
         db.query(
-            models.Opiniao.aspecto.label("aspecto"),
-            func.avg(
-                case(
-                    (models.Comentario.restaurante_id == restaurante1_id, models.Opiniao.polaridade),
-                    else_=None,
-                )
-            ).label("nota_predita1"),
-            func.avg(
-                case(
-                    (models.Comentario.restaurante_id == restaurante2_id, models.Opiniao.polaridade),
-                    else_=None,
-                )
-            ).label("nota_predita2"),
+            sub.c.categoria,
+            func.avg(case((sub.c.rest_id == restaurante1_id, sub.c.media), else_=None)).label("m1"),
+            func.avg(case((sub.c.rest_id == restaurante2_id, sub.c.media), else_=None)).label("m2"),
         )
-        .join(models.Comentario, models.Opiniao.comentario_id == models.Comentario.id)
-        .filter(models.Comentario.restaurante_id.in_([restaurante1_id, restaurante2_id]))
-        .group_by(models.Opiniao.aspecto)
+        .group_by(sub.c.categoria)
+        .order_by(sub.c.categoria)
         .all()
     )
 
-    out = []
-    for r in rows:
-        n1 = round(float(r.nota_predita1) if r.nota_predita1 is not None else 0.0, 3)
-        n2 = round(float(r.nota_predita2) if r.nota_predita2 is not None else 0.0, 3)
-        out.append({"aspecto": r.aspecto, "notaPredita1": n1, "notaPredita2": n2})
-    # ordenar opcionalmente por aspecto
-    out.sort(key=lambda x: x["aspecto"] or "")
-    return out
+    # Constrói o payload esperado pelo app
+    return [
+        schemas.AspectoComparado(
+            aspecto=row.categoria,
+            notaPredita1=float(row.m1 or 0.0),
+            notaPredita2=float(row.m2 or 0.0),
+        )
+        for row in rows
+    ]
+
+# --------- READS ---------
+def get_chart_polaridade(db: Session, restaurante_id: int, aspecto: str | None = None):
+    q = db.query(models.ChartPolaridadeAspecto).filter(
+        models.ChartPolaridadeAspecto.restaurante_id == restaurante_id
+    )
+    if aspecto:
+        q = q.filter(models.ChartPolaridadeAspecto.aspecto == aspecto)
+    return q.order_by(models.ChartPolaridadeAspecto.aspecto.asc()).all()
+
+def get_chart_genero(db: Session, restaurante_id: int, categoria_id: int | None = None):
+    q = db.query(models.ChartGeneroAspecto).filter(
+        models.ChartGeneroAspecto.restaurante_id == restaurante_id
+    )
+    if categoria_id is not None:
+        q = q.filter(models.ChartGeneroAspecto.categoria_id == categoria_id)
+    return q.order_by(models.ChartGeneroAspecto.categoria_id.asc()).all()
+
+
+
+def refresh_charts(db: Session, restaurante_id: int | None = None):
+    # Se restaurante_id for None, recomputa tudo; senão, só daquele restaurante
+    db.execute(SQL_REFRESH_POLARIDADE, {"rid": restaurante_id})
+    db.execute(SQL_REFRESH_GENERO, {"rid": restaurante_id})
+    db.commit()

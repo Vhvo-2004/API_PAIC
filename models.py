@@ -59,3 +59,24 @@ class Opiniao(Base):
 
     comentario = relationship("Comentario", back_populates="opinioes")
     categoria = relationship("CategoriaOpiniao", back_populates="opinioes")
+# models.py (adicione ao final)
+from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, UniqueConstraint, func
+from database import Base
+
+class ChartPolaridadeAspecto(Base):
+    __tablename__ = "chart_polaridade_aspecto"
+    restaurante_id = Column(Integer, primary_key=True)
+    aspecto        = Column(String(100), primary_key=True)
+    avg_polaridade = Column(Float, nullable=False)     # DOUBLE
+    qt_opinioes    = Column(Integer, nullable=False)
+    updated_at     = Column(DateTime, nullable=False, server_default=func.now(), onupdate=func.now())
+
+class ChartGeneroAspecto(Base):
+    __tablename__ = "chart_genero_aspecto"
+    restaurante_id = Column(Integer, primary_key=True)
+    categoria_id   = Column(Integer, primary_key=True)   # você trocou de 'aspecto' para 'categoria_id'
+    masc_count     = Column(Integer, nullable=False)
+    fem_count      = Column(Integer, nullable=False)
+    outros_count   = Column(Integer, nullable=False)
+    total          = Column(Integer, nullable=False)
+    updated_at     = Column(DateTime, nullable=False, server_default=func.now(), onupdate=func.now())
