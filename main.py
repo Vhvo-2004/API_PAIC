@@ -5,7 +5,7 @@ from typing import List
 import models, schemas, crud
 from database import SessionLocal, engine
 import uvicorn
-
+import os
 # Cria as tabelas conforme os models novos
 models.Base.metadata.create_all(bind=engine)
 
