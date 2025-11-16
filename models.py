@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, Text, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, String, Float, Text, DateTime, ForeignKey , Numeric
 from sqlalchemy.orm import relationship
 from database import Base
 
@@ -80,3 +80,31 @@ class ChartGeneroAspecto(Base):
     outros_count   = Column(Integer, nullable=False)
     total          = Column(Integer, nullable=False)
     updated_at     = Column(DateTime, nullable=False, server_default=func.now(), onupdate=func.now())
+from sqlalchemy import Column, Integer, String, Float, TIMESTAMP
+from database import Base
+
+class ChartPolaridadeCategoria(Base):
+    __tablename__ = "chart_polaridade_categoria"
+
+    restaurante_id = Column(Integer, primary_key=True)
+    categoria_id = Column(Integer, primary_key=True)
+    categoria_nome = Column(String(100), primary_key=True)
+    qt_opinioes = Column(Integer, nullable=False)
+    avg_polaridade = Column(Float, nullable=False)
+    updated_at = Column(TIMESTAMP)
+
+class OpiniaoTemporal(Base):
+    __tablename__ = "opinioes_temporal"
+
+    id = Column(Integer, primary_key=True, index=True)
+    opiniao_id = Column(Integer, nullable=False)
+    comentario_id = Column(Integer, ForeignKey("comentario.id", ondelete="CASCADE"))
+    restaurante_id = Column(Integer, nullable=False)
+    cliente_id = Column(Integer)
+    aspecto = Column(String(100))
+    polaridade = Column(Numeric(6, 4))
+    sentimento = Column(String(50))
+    sentenca = Column(Text)
+    categoria_id = Column(Integer)
+    data_publicacao = Column(DateTime)
+

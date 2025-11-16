@@ -126,3 +126,33 @@ class ChartGeneroAspecto(BaseModel):
     updated_at: datetime
     class Config:
         from_attributes = True
+
+from pydantic import BaseModel
+from datetime import datetime
+
+class ChartPolaridadeCategoria(BaseModel):
+    restaurante_id: int
+    categoria_id: int
+    categoria_nome: str
+    qt_opinioes: int
+    avg_polaridade: float
+    updated_at: datetime
+
+    class Config:
+        orm_mode = True
+
+class OpiniaoTemporalBase(BaseModel):
+    opiniao_id: int
+    comentario_id: int
+    restaurante_id: int
+    cliente_id: Optional[int]
+    aspecto: Optional[str]
+    polaridade: Optional[float]
+    sentimento: Optional[str]
+    sentenca: Optional[str]
+    categoria_id: Optional[int]
+    data_publicacao: Optional[datetime]
+
+class OpiniaoTemporalOut(OpiniaoTemporalBase):
+    class Config:
+        orm_mode = True

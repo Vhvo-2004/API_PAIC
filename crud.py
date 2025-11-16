@@ -107,10 +107,45 @@ def get_chart_genero(db: Session, restaurante_id: int, categoria_id: int | None 
         q = q.filter(models.ChartGeneroAspecto.categoria_id == categoria_id)
     return q.order_by(models.ChartGeneroAspecto.categoria_id.asc()).all()
 
-
+def get_chart_polaridade_categoria(db: Session, restaurante_id: int):
+    return (
+        db.query(models.ChartPolaridadeCategoria)
+        .filter(models.ChartPolaridadeCategoria.restaurante_id == restaurante_id)
+        .order_by(models.ChartPolaridadeCategoria.categoria_nome.asc())
+        .all()
+    )
 
 def refresh_charts(db: Session, restaurante_id: int | None = None):
     # Se restaurante_id for None, recomputa tudo; senão, só daquele restaurante
     db.execute(SQL_REFRESH_POLARIDADE, {"rid": restaurante_id})
     db.execute(SQL_REFRESH_GENERO, {"rid": restaurante_id})
     db.commit()
+
+def get_media_mensal_por_restaurante(db, restaurante_id: int):
+    return (
+        db.query(
+            func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m").label("ano_mes"),
+            func.avg(OpiniaoTemporal.polaridade).label("media_polaridade"),
+            func.count().label("total_opinioes")
+        )
+        .filter(OpiniaoTemporal.restaurante_id == restaurante_id)
+        .group_by(func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m"))
+        .order_by(func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m"))
+        .all()
+    )
+
+from sqlalchemy import func, case
+from models import OpiniaoTemporal
+
+def get_opinioes_por_mes(db, restaurante_id: int):
+    return (
+        db.query(
+            func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m").label("ano_mes"),
+            func.sum(case((OpiniaoTemporal.polaridade >= 0.5, 1), else_=0)).label("positivas"),
+            func.sum(case((OpiniaoTemporal.polaridade < 0.5, 1), else_=0)).label("negativas")
+        )
+        .filter(OpiniaoTemporal.restaurante_id == restaurante_id)
+        .group_by(func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m"))
+        .order_by("ano_mes")
+        .all()
+    )

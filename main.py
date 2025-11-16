@@ -113,3 +113,46 @@ def chart_polaridade(restaurante_id: int, aspecto: str | None = Query(None), db:
 @app.get("/charts/genero/{restaurante_id}", response_model=List[schemas.ChartGeneroAspecto])
 def chart_genero(restaurante_id: int, categoria_id: int | None = Query(None), db: Session = Depends(get_db)):
     return crud.get_chart_genero(db, restaurante_id, categoria_id)
+
+# ----- Chart: Polaridade por Categoria -----
+@app.get("/charts/polaridade-categoria/{restaurante_id}", response_model=List[schemas.ChartPolaridadeCategoria])
+def chart_polaridade_categoria(restaurante_id: int, db: Session = Depends(get_db)):
+    """
+    Retorna as médias de polaridade e quantidade de opiniões
+    por categoria para um restaurante específico.
+    """
+    rows = (
+        db.query(models.ChartPolaridadeCategoria)
+        .filter(models.ChartPolaridadeCategoria.restaurante_id == restaurante_id)
+        .order_by(models.ChartPolaridadeCategoria.categoria_nome.asc())
+        .all()
+    )
+    return rows
+
+
+@app.get("/graficos/media-mensal/{restaurante_id}")
+def grafico_media_mensal(restaurante_id: int, db: Session = Depends(get_db)):
+    dados = crud.get_media_mensal_por_restaurante(db, restaurante_id)
+    return [
+        {"ano_mes": r[0], "media_polaridade": float(r[1]), "total_opinioes": r[2]}
+        for r in dados
+    ]
+@app.get("/graficos/temporal/{restaurante_id}")
+def grafico_temporal(restaurante_id: int, db: Session = Depends(get_db)):
+    dados = crud.get_opinioes_por_mes(db, restaurante_id)
+    return [
+        {
+            "ano_mes": r[0],
+            "positivas": int(r[1]),
+            "negativas": int(r[2])
+        }
+        for r in dados
+    ]
+# --------- ENTRYPOINT PARA O RENDER ---------
+if __name__ == "__main__":
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=int(os.getenv("PORT", 8000)),
+        reload=False
+    )
