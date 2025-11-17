@@ -157,3 +157,28 @@ if __name__ == "__main__":
         port=int(os.getenv("PORT", 8000)),
         reload=False
     )
+
+
+from sqlalchemy import text
+
+@app.get("/debug/db")
+def debug_database(db: Session = Depends(get_db)):
+    result = {}
+
+    try:
+        result["public.cliente"] = db.execute(text("SELECT COUNT(*) FROM cliente")).scalar()
+    except Exception as e:
+        result["public.cliente"] = f"erro: {e}"
+
+    try:
+        result["restaurantes_db.cliente"] = db.execute(text("SELECT COUNT(*) FROM restaurantes_db.cliente")).scalar()
+    except Exception as e:
+        result["restaurantes_db.cliente"] = f"erro: {e}"
+
+    try:
+        search_path = db.execute(text("SHOW search_path")).scalar()
+    except:
+        search_path = "erro lendo search_path"
+
+    result["current_search_path"] = search_path
+    return result
