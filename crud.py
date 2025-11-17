@@ -121,31 +121,39 @@ def refresh_charts(db: Session, restaurante_id: int | None = None):
     db.execute(SQL_REFRESH_GENERO, {"rid": restaurante_id})
     db.commit()
 
+from sqlalchemy import func
+
 def get_media_mensal_por_restaurante(db, restaurante_id: int):
+    ano_mes = func.to_char(OpiniaoTemporal.data_publicacao, 'YYYY-MM')
+
     return (
         db.query(
-            func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m").label("ano_mes"),
+            ano_mes.label("ano_mes"),
             func.avg(OpiniaoTemporal.polaridade).label("media_polaridade"),
-            func.count().label("total_opinioes")
+            func.count().label("total_opinioes"),
         )
         .filter(OpiniaoTemporal.restaurante_id == restaurante_id)
-        .group_by(func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m"))
-        .order_by(func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m"))
+        .group_by(ano_mes)
+        .order_by(ano_mes)
         .all()
     )
+
 
 from sqlalchemy import func, case
 from models import OpiniaoTemporal
 
 def get_opinioes_por_mes(db, restaurante_id: int):
+    ano_mes = func.to_char(OpiniaoTemporal.data_publicacao, 'YYYY-MM')
+
     return (
         db.query(
-            func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m").label("ano_mes"),
+            ano_mes.label("ano_mes"),
             func.sum(case((OpiniaoTemporal.polaridade >= 0.5, 1), else_=0)).label("positivas"),
-            func.sum(case((OpiniaoTemporal.polaridade < 0.5, 1), else_=0)).label("negativas")
+            func.sum(case((OpiniaoTemporal.polaridade < 0.5, 1), else_=0)).label("negativas"),
         )
         .filter(OpiniaoTemporal.restaurante_id == restaurante_id)
-        .group_by(func.date_format(OpiniaoTemporal.data_publicacao, "%Y-%m"))
-        .order_by("ano_mes")
+        .group_by(ano_mes)
+        .order_by(ano_mes)
         .all()
     )
+
