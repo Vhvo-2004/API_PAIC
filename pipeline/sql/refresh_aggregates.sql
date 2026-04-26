@@ -6,22 +6,19 @@ Filtro opcional:
 */
 
 -- 1) chart_polaridade_aspecto
-INSERT INTO chart_polaridade_aspecto (restaurante_id, aspecto, categoria_nome, avg_polaridade, qt_opinioes, updated_at)
+INSERT INTO chart_polaridade_aspecto (restaurante_id, aspecto, avg_polaridade, qt_opinioes, updated_at)
 SELECT
     c.restaurante_id,
     o.aspecto,
-    MAX(COALESCE(co.categoria, 'Sem categoria')) AS categoria_nome,
     AVG(o.polaridade) AS avg_polaridade,
     COUNT(*) AS qt_opinioes,
     NOW() AS updated_at
 FROM opiniao o
 JOIN comentario c ON c.id = o.comentario_id
-LEFT JOIN categoria_opiniao co ON co.id = o.categoria_id
 WHERE (:rid IS NULL OR c.restaurante_id = :rid)
 GROUP BY c.restaurante_id, o.aspecto
 ON CONFLICT (restaurante_id, aspecto)
 DO UPDATE SET
-    categoria_nome = EXCLUDED.categoria_nome,
     avg_polaridade = EXCLUDED.avg_polaridade,
     qt_opinioes = EXCLUDED.qt_opinioes,
     updated_at = NOW();
