@@ -16,8 +16,15 @@ Este ajuste implementa **somente** a etapa de sincronização das tabelas agrega
 ## Arquivos
 - SQL da atualização: `pipeline/sql/refresh_aggregates.sql`
 - Serviço Python: `pipeline/services/aggregation_service.py`
+- Script executável: `scripts/run_refresh_app_tables.py`
 
-## Como executar
+## Como executar (script)
+```bash
+./scripts/run_refresh_app_tables.py
+./scripts/run_refresh_app_tables.py --restaurante-id 1
+```
+
+## Como executar (Python)
 ```python
 from database import SessionLocal
 from pipeline.services.aggregation_service import refresh_app_tables
