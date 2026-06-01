@@ -20,6 +20,7 @@ def refresh_app_tables(db: Session, restaurante_id: int | None = None) -> None:
     Tabelas de consulta destino:
       - chart_polaridade_aspecto
       - chart_polaridade_categoria
+      - chart_polaridade_categoria_temporal
       - opinioes_temporal
       - media_mensal
     """

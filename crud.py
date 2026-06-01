@@ -115,6 +115,23 @@ def get_chart_polaridade_categoria(db: Session, restaurante_id: int):
         .all()
     )
 
+
+def get_chart_polaridade_categoria_temporal(
+    db: Session, restaurante_id: int, categoria_id: int | None = None
+):
+    q = db.query(models.ChartPolaridadeCategoriaTemporal).filter(
+        models.ChartPolaridadeCategoriaTemporal.restaurante_id == restaurante_id
+    )
+    if categoria_id is not None:
+        q = q.filter(models.ChartPolaridadeCategoriaTemporal.categoria_id == categoria_id)
+    return (
+        q.order_by(
+            models.ChartPolaridadeCategoriaTemporal.periodo.asc(),
+            models.ChartPolaridadeCategoriaTemporal.categoria_nome.asc(),
+        )
+        .all()
+    )
+
 def refresh_charts(db: Session, restaurante_id: int | None = None):
     # Se restaurante_id for None, recomputa tudo; senão, só daquele restaurante
     db.execute(SQL_REFRESH_POLARIDADE, {"rid": restaurante_id})

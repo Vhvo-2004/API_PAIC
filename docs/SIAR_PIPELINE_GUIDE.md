@@ -10,6 +10,7 @@ Este ajuste implementa **somente** a etapa de sincronização das tabelas agrega
 ## Destino (consultadas pelo app)
 - `chart_polaridade_aspecto`
 - `chart_polaridade_categoria`
+- `chart_polaridade_categoria_temporal`
 - `opinioes_temporal`
 - `media_mensal`
 
@@ -36,3 +37,13 @@ with SessionLocal() as db:
 
 ## Observação
 A query usa parâmetro `:rid` para permitir atualização global ou por restaurante.
+
+
+## Polaridade temporal por categoria
+A tabela `chart_polaridade_categoria_temporal` guarda uma linha por restaurante, categoria e mês (`periodo` no primeiro dia do mês), com `qt_opinioes` e `avg_polaridade`.
+
+Ela alimenta os endpoints:
+- `GET /charts/polaridade-categoria-temporal/{restaurante_id}`
+- `GET /graficos/histograma-categoria/{restaurante_id}`
+
+Ambos aceitam o filtro opcional `categoria_id` para retornar apenas uma categoria no histograma temporal.
