@@ -80,7 +80,7 @@ class ChartGeneroAspecto(Base):
     outros_count   = Column(Integer, nullable=False)
     total          = Column(Integer, nullable=False)
     updated_at     = Column(DateTime, nullable=False, server_default=func.now(), onupdate=func.now())
-from sqlalchemy import Column, Integer, String, Float, TIMESTAMP
+from sqlalchemy import Column, Integer, String, Float, TIMESTAMP, Date
 from database import Base
 
 class ChartPolaridadeCategoria(Base):
@@ -89,6 +89,18 @@ class ChartPolaridadeCategoria(Base):
     restaurante_id = Column(Integer, primary_key=True)
     categoria_id = Column(Integer, primary_key=True)
     categoria_nome = Column(String(100), primary_key=True)
+    qt_opinioes = Column(Integer, nullable=False)
+    avg_polaridade = Column(Float, nullable=False)
+    updated_at = Column(TIMESTAMP)
+
+
+class ChartPolaridadeCategoriaTemporal(Base):
+    __tablename__ = "chart_polaridade_categoria_temporal"
+
+    restaurante_id = Column(Integer, primary_key=True)
+    categoria_id = Column(Integer, primary_key=True)
+    categoria_nome = Column(String(255))
+    periodo = Column(Date, primary_key=True)
     qt_opinioes = Column(Integer, nullable=False)
     avg_polaridade = Column(Float, nullable=False)
     updated_at = Column(TIMESTAMP)

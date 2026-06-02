@@ -131,6 +131,42 @@ def chart_polaridade_categoria(restaurante_id: int, db: Session = Depends(get_db
     return rows
 
 
+
+@app.get(
+    "/charts/polaridade-categoria-temporal/{restaurante_id}",
+    response_model=List[schemas.ChartPolaridadeCategoriaTemporal],
+)
+def chart_polaridade_categoria_temporal(
+    restaurante_id: int,
+    categoria_id: int | None = Query(None),
+    db: Session = Depends(get_db),
+):
+    """
+    Retorna a média mensal de polaridade por categoria para um restaurante.
+    Pode ser filtrado por categoria_id para alimentar o histograma de uma categoria.
+    """
+    return crud.get_chart_polaridade_categoria_temporal(db, restaurante_id, categoria_id)
+
+
+@app.get("/graficos/histograma-categoria/{restaurante_id}")
+def grafico_histograma_categoria(
+    restaurante_id: int,
+    categoria_id: int | None = Query(None),
+    db: Session = Depends(get_db),
+):
+    dados = crud.get_chart_polaridade_categoria_temporal(db, restaurante_id, categoria_id)
+    return [
+        {
+            "ano_mes": row.periodo.strftime("%Y-%m"),
+            "periodo": row.periodo,
+            "categoria_id": row.categoria_id,
+            "categoria_nome": row.categoria_nome,
+            "media_polaridade": float(row.avg_polaridade),
+            "total_opinioes": row.qt_opinioes,
+        }
+        for row in dados
+    ]
+
 @app.get("/graficos/media-mensal/{restaurante_id}")
 def grafico_media_mensal(restaurante_id: int, db: Session = Depends(get_db)):
     dados = crud.get_media_mensal_por_restaurante(db, restaurante_id)

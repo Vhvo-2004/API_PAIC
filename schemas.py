@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional, List
-from datetime import datetime
+from datetime import datetime, date
 from decimal import Decimal
 
 # ---- Restaurante ----
@@ -134,6 +134,19 @@ class ChartPolaridadeCategoria(BaseModel):
     restaurante_id: int
     categoria_id: int
     categoria_nome: str
+    qt_opinioes: int
+    avg_polaridade: float
+    updated_at: datetime
+
+    class Config:
+        orm_mode = True
+
+
+class ChartPolaridadeCategoriaTemporal(BaseModel):
+    restaurante_id: int
+    categoria_id: int
+    categoria_nome: Optional[str] = None
+    periodo: date
     qt_opinioes: int
     avg_polaridade: float
     updated_at: datetime
